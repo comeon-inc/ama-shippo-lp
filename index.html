@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Owari Shippo &amp; Fermentation: A Private Day in Ama with a Fifth-Generation Artist</title>
+<meta name="description" content="A private day in Ama, the birthplace of Owari shippo cloisonné, next to Nagoya. Make your own cloisonné piece with a fifth-generation artist, share her family's lunch, visit a miso and tamari brewery founded in 1874, and take your finished piece home that night. One group a day, 1–4 guests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* 七宝の色：瑠璃・紅・翡翠、銀線の金銀、白磁の地 */
+  --ground:#F5F4F1; --ground-2:#ECE9EF; --ink:#1C1A2B; --ink-soft:#57546A;
+  --ruri:#27458F; --ruri-deep:#1A2F66; --beni:#9C2A55; --jade:#2E7A6B; --gold:#B59A5C;
+  --line:#D6D2DC; --line-dark:#3E3B55; --night:#191A33;
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho","Noto Serif TC","PMingLiU",Georgia,serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic","Noto Sans TC","Microsoft JhengHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px; --sky:#DCE6EE; --sky-ink:#1C1A2B;
+  --shippo:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23B59A5C' stroke-width='.8'%3E%3Ccircle cx='0' cy='0' r='24'/%3E%3Ccircle cx='48' cy='0' r='24'/%3E%3Ccircle cx='0' cy='48' r='24'/%3E%3Ccircle cx='48' cy='48' r='24'/%3E%3Ccircle cx='24' cy='24' r='24'/%3E%3C/g%3E%3C/svg%3E");
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html[lang="zh-Hant"]{
+  --serif:"Noto Serif TC","PMingLiU","Shippori Mincho B1",Georgia,serif;
+  --sans:"Noto Sans TC","Microsoft JhengHei","PingFang TC",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--ruri)}
+:focus-visible{outline:2px solid var(--beni);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.3;margin:0}
+h2{font-size:clamp(28px,3.4vw,44px);margin-bottom:20px}
+p{margin:0 0 1em}
+section{padding:96px 0}
+.alt{background:var(--ground-2)}
+.dark{background:var(--night);color:var(--ground);position:relative;isolation:isolate}
+.dark::before{content:"";position:absolute;inset:0;background-image:var(--shippo);background-size:48px 48px;opacity:.13;z-index:-1;pointer-events:none}
+.dark p,.dark li{color:#D9D7E4}
+.intro{max-width:42em;color:var(--ink-soft);margin-bottom:48px}
+.dark .intro{color:#B8B5CC}
+@media (max-width:760px){section{padding:72px 0}}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:50;background:rgba(245,244,241,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.site-head::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--ruri) 0 25%,var(--jade) 25% 50%,var(--gold) 50% 75%,var(--beni) 75%)}
+.site-head .wrap{display:flex;align-items:center;gap:20px;height:68px}
+.brand{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;line-height:1.1;flex-shrink:0}
+.brand b{font-family:var(--serif);font-size:20px;font-weight:800;letter-spacing:.04em}
+.brand small{font-size:11px;color:var(--ink-soft);letter-spacing:.04em}
+.nav{display:flex;gap:22px;margin-left:auto}
+.nav a{color:var(--ink);text-decoration:none;font-size:14px}
+.nav a:hover{color:var(--beni)}
+.langs{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex-shrink:0}
+.langs button{font:inherit;font-size:12px;background:none;border:0;padding:6px 9px;cursor:pointer;color:var(--ink-soft)}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.btn{display:inline-block;font-family:var(--sans);font-weight:700;text-decoration:none;background:var(--ruri);color:#fff;padding:15px 28px;border-radius:2px;font-size:16px;transition:background .2s;border:0;cursor:pointer}
+.btn:hover{background:var(--ruri-deep)}
+.btn.small{padding:9px 16px;font-size:13px;flex-shrink:0}
+.micro{font-size:13px;color:var(--ink-soft);margin-top:10px}
+@media (max-width:1060px){.nav{display:none}.langs{margin-left:auto}}
+@media (max-width:620px){.site-head .btn.small{display:none}}
+@media (max-width:400px){.site-head .wrap{gap:10px;padding:0 14px}.brand b{font-size:17px}.langs button{padding:6px 7px;font-size:11px}}
+
+/* Photo slots */
+.photo{position:relative;overflow:hidden;background:var(--ground-2);border-radius:2px}
+.photo>span{position:absolute;right:12px;bottom:10px;font-size:11px;color:var(--ink-soft)}
+.photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.tone-enamel{background:linear-gradient(160deg,#3A5DAF,#1A2F66)}
+.tone-dawn{background:linear-gradient(160deg,#E1E6EC,#C5CCD6)}
+.tone-warm{background:linear-gradient(160deg,#9A6A3C,#4A2E1C)}
+.tone-dusk{background:linear-gradient(160deg,#8E3A5A,#22264A)}
+.tone-enamel>span,.tone-warm>span,.tone-dusk>span{color:rgba(255,255,255,.72)}
+
+/* Hero */
+.hero{padding:40px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.kicker{font-size:15px;color:var(--beni);font-weight:700;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,5vw,68px);font-weight:800;line-height:1.12}
+html[lang="ja"] .hero h1,html[lang="zh-Hant"] .hero h1{font-size:clamp(30px,3.9vw,54px);line-height:1.35;letter-spacing:.02em}
+html[lang="fr"] .hero h1,html[lang="de"] .hero h1{font-size:clamp(34px,4.4vw,60px)}
+.hero .lead{font-size:18px;max-width:34em;margin:24px 0 28px;color:var(--ink-soft)}
+.facts{list-style:none;margin:0 0 32px;padding:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.facts li{padding:13px 16px 13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.facts li:first-child{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--ruri-deep)}
+.hero-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0}
+.hero-photos figure{margin:0}
+.hero-photos figure:first-child{grid-column:1/-1}
+.hero-photos figure:first-child .photo{aspect-ratio:3/2}
+.hero-photos .photo{aspect-ratio:1/1}
+.hero-photos figcaption{font-size:12px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:28px}.hero-photos{order:-1;gap:8px}.facts{grid-template-columns:1fr}}
+
+/* Empathy */
+.empathy .wrap{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:start}
+.empathy h2{font-size:clamp(28px,3.2vw,42px);margin:0}
+.empathy p{color:var(--ink-soft);font-size:18px}
+@media (max-width:860px){.empathy .wrap{grid-template-columns:1fr;gap:24px}}
+
+/* Story */
+.story .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px}
+.story p{max-width:38em;line-height:1.9}
+.story p:last-child{font-family:var(--serif);font-size:20px;color:var(--ground);line-height:1.7;margin-top:28px;padding-top:24px;border-top:1px solid var(--gold)}
+.land{grid-column:1/-1;margin:40px 0 0;display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.land figure{margin:0}
+.land .photo{aspect-ratio:auto;height:clamp(280px,36vw,460px)}
+.land figcaption{font-size:14px;color:#B8B5CC;margin-top:12px}
+@media (max-width:760px){.land{grid-template-columns:1fr}.land .photo{height:auto;aspect-ratio:4/3}}
+.chain{list-style:none;padding:0;margin:56px 0 0;display:grid;grid-template-columns:repeat(4,1fr);position:relative;grid-column:1/-1}
+.chain::before{content:"";position:absolute;left:12.5%;right:12.5%;top:9px;height:1px;background:var(--gold);opacity:.7}
+.chain li{text-align:center;position:relative;font-family:var(--serif);font-size:17px;color:var(--ground);padding:0 6px}
+.chain li::before{content:"";display:block;width:19px;height:19px;border-radius:50%;margin:0 auto 14px;border:1px solid var(--gold)}
+.chain li:nth-child(1)::before{background:#C9CED8}
+.chain li:nth-child(2)::before{background:var(--ruri)}
+.chain li:nth-child(3)::before{background:#8A5A30}
+.chain li:nth-child(4)::before{background:var(--beni)}
+@media (max-width:860px){.story .wrap{grid-template-columns:1fr;gap:20px}.chain li{font-size:13px}}
+
+/* Video */
+.video-box{position:relative;aspect-ratio:16/9;background:#000;border-radius:2px;overflow:hidden}
+.video-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* Expect / Why */
+.ew{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.ew h2{font-size:clamp(24px,2.6vw,34px);padding-bottom:14px;border-bottom:2px solid var(--ruri);margin-bottom:8px}
+.ew .why h2{border-color:var(--beni)}
+.ew ul{list-style:none;margin:0;padding:0}
+.ew li{padding:18px 0;border-bottom:1px solid var(--line)}
+.ew li b{display:block;font-family:var(--serif);font-size:21px;line-height:1.4;margin-bottom:4px}
+.ew li span{color:var(--ink-soft);font-size:15px}
+@media (max-width:860px){.ew{grid-template-columns:1fr;gap:48px}}
+
+/* Day */
+.day-grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.sky{position:sticky;top:96px;height:min(calc(100vh - 140px),620px);border-radius:2px;background:var(--sky);color:var(--sky-ink);overflow:hidden;transition:background 1.1s ease,color 1.1s ease}
+.sky .horizon{position:absolute;left:0;right:0;bottom:30%;height:1px;background:currentColor;opacity:.35}
+.sky .ground{position:absolute;left:0;right:0;bottom:0;height:30%;background:currentColor;opacity:.07}
+.sky .orb{position:absolute;width:64px;height:64px;border-radius:50%;left:var(--ox,15%);bottom:var(--oy,40%);transform:translate(-50%,50%);background:var(--orb,#F3E3B5);box-shadow:0 0 60px 10px var(--orb-glow,rgba(243,227,181,.55));transition:left 1.1s ease,bottom 1.1s ease,background 1.1s ease,box-shadow 1.1s ease}
+.sky .clock{position:absolute;left:32px;top:28px;font-family:var(--serif);font-weight:800;font-size:clamp(48px,6vw,88px);line-height:1;font-variant-numeric:tabular-nums}
+.sky .now{position:absolute;left:32px;right:32px;bottom:28px;font-family:var(--serif);font-size:20px;line-height:1.4}
+.stops{list-style:none;margin:0;padding:0}
+.stop{display:grid;grid-template-columns:72px 1fr;gap:20px;padding:34px 0;border-top:1px solid var(--line)}
+.stop:last-child{border-bottom:1px solid var(--line)}
+.stop time{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--ink-soft);padding-top:2px}
+.stop.is-active time{color:var(--beni)}
+.stop h3{font-size:23px;margin-bottom:8px}
+.stop p{color:var(--ink-soft);margin:0}
+.stop .photo{aspect-ratio:3/2;margin-top:18px}
+@media (max-width:860px){
+  .day-grid{grid-template-columns:1fr;gap:0}
+  .sky{top:calc(68px + env(safe-area-inset-top,0px));height:84px;z-index:5;margin:0 -24px}
+  .sky .clock{font-size:34px;top:50%;transform:translateY(-50%);left:24px}
+  .sky .now{left:132px;right:96px;bottom:auto;top:50%;transform:translateY(-50%);font-size:15px}
+  .sky .orb{width:34px;height:34px;left:auto;right:28px;bottom:50%;transform:translateY(50%)}
+  .sky .horizon,.sky .ground{display:none}
+  .stop{grid-template-columns:56px 1fr;gap:14px}.stop h3{font-size:20px}
+}
+
+/* Take home */
+.sub{font-size:22px;margin:0 0 6px}
+.subp{color:var(--ink-soft);margin:0 0 18px;max-width:44em}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0 0 48px;list-style:none;padding:0}
+.gal li .photo{aspect-ratio:1/1}
+.gal li p{font-family:var(--serif);font-size:16px;margin:12px 0 0}
+@media (max-width:860px){.gal{grid-template-columns:1fr 1fr;gap:8px}.gal li p{font-size:13px}}
+.ba{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 48px;list-style:none;padding:0}
+.ba li .photo{aspect-ratio:1/1}
+.ba li p{font-family:var(--serif);font-size:16px;margin:12px 0 0}
+.take-grid{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:start}
+.take-item{padding:20px 0;border-top:1px solid var(--line)}
+.take-item h3{font-size:21px;margin-bottom:6px}
+.take-item p{color:var(--ink-soft);margin:0}
+.note{font-size:14px;color:var(--ink-soft);border-left:3px solid var(--gold);padding-left:14px;margin-top:24px}
+.take-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.take-grid .photo{aspect-ratio:4/5}
+@media (max-width:860px){.take-grid{grid-template-columns:1fr}.ba{gap:8px}.ba li p{font-size:13px}}
+
+/* People */
+.people{display:grid;grid-template-columns:3fr 2fr;gap:48px;align-items:start}
+.person .photo{aspect-ratio:4/5;margin-bottom:20px}
+.person .photo img{object-position:center 20%}
+.person:first-child h3{font-size:32px}
+.team{margin:56px 0 0}
+.team .photo{aspect-ratio:16/9}
+.team .photo img{object-position:center 35%}
+@media (max-width:760px){.team .photo{aspect-ratio:4/3}}
+.team figcaption{font-size:14px;color:var(--ink-soft);margin-top:12px}
+.person h3{font-size:26px}
+.person .role{font-size:14px;color:var(--ink-soft);margin:4px 0 10px}
+.person .years{font-family:var(--serif);font-weight:700;color:var(--beni);margin-bottom:10px}
+.person p{color:var(--ink-soft);font-size:15px}
+.person blockquote{margin:16px 0 0;padding-left:14px;border-left:2px solid var(--gold);font-family:var(--serif);font-size:16px}
+@media (max-width:960px){.people{grid-template-columns:1fr 1fr;gap:32px}}
+@media (max-width:620px){.people{grid-template-columns:1fr}.person .photo{aspect-ratio:4/3}}
+
+
+/* Price */
+.price-grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.price-card{background:var(--night);color:var(--ground);padding:40px;border-radius:2px;position:relative;isolation:isolate;overflow:hidden;border-top:3px solid var(--gold)}
+.price-card::before{content:"";position:absolute;inset:0;background-image:var(--shippo);background-size:48px 48px;opacity:.1;z-index:-1}
+.price-card .amount{font-family:var(--serif);font-size:56px;font-weight:800;line-height:1}
+.price-card .per{color:#B8B5CC;margin:8px 0 24px}
+.price-card dl{margin:0 0 28px}
+.price-card dt{font-size:13px;color:#A9A6C0;margin-top:14px}
+.price-card dd{margin:2px 0 0;font-size:15px}
+.price-card .micro{color:#B8B5CC}
+.price-card .btn{background:var(--beni)}
+.price-card .btn:hover{background:#7E1F44}
+.inc h3{font-size:20px;margin:0 0 10px}
+.inc ul{margin:0 0 32px;padding-left:1.2em;color:var(--ink-soft)}
+.inc li{margin:4px 0}
+@media (max-width:860px){.price-grid{grid-template-columns:1fr}.price-card{padding:32px 24px}}
+
+/* Worries */
+.worries{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.worry{padding:24px 0;border-top:1px solid var(--line)}
+.worry small{display:block;font-size:13px;color:var(--beni);font-weight:700;margin-bottom:4px}
+.worry h3{font-size:22px;margin-bottom:8px}
+.worry p{color:var(--ink-soft);margin:0}
+@media (max-width:760px){.worries{grid-template-columns:1fr}}
+
+/* Steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px 32px;counter-reset:s}
+.steps li{counter-increment:s;padding-top:18px;border-top:2px solid var(--ruri)}
+.steps li::before{content:counter(s);font-family:var(--serif);font-weight:800;font-size:28px;color:var(--ruri);display:block;line-height:1;margin-bottom:10px}
+.steps h3{font-size:20px;margin-bottom:6px}
+.steps p{color:var(--ink-soft);margin:0;font-size:15px}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* Know + cancel */
+.know-grid{display:grid;grid-template-columns:7fr 5fr;gap:64px}
+.know ul{margin:0;padding:0;list-style:none}
+.know li{padding:14px 0 14px 22px;border-top:1px solid var(--line-dark);position:relative;font-size:15px}
+.know li::before{content:"";position:absolute;left:2px;top:24px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.cancel h3{font-size:22px;margin-bottom:16px}
+.cancel ul{list-style:none;margin:0;padding:0}
+.cancel li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line-dark);font-size:15px}
+.cancel li::before{content:none}
+.cancel li b{font-family:var(--serif);font-size:18px;white-space:nowrap;color:var(--ground)}
+.cancel p{font-size:14px;margin-top:14px}
+@media (max-width:860px){.know-grid{grid-template-columns:1fr;gap:48px}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);max-width:860px}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;font-family:var(--serif);font-size:19px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:16px;font-size:26px;font-family:var(--sans);font-weight:400;color:var(--beni)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--ink-soft);padding-bottom:20px;margin:0;max-width:44em}
+
+/* Book */
+.book{background:var(--ruri-deep);color:#fff;position:relative;isolation:isolate}
+.book::before{content:"";position:absolute;inset:0;background-image:var(--shippo);background-size:48px 48px;opacity:.12;z-index:-1}
+.book .head{text-align:center;max-width:40em;margin:0 auto 36px}
+.book .head p{color:#DCE2F2}
+.book .micro{color:#DCE2F2}
+.form-frame{max-width:760px;margin:0 auto;background:#fff;border-radius:2px;overflow:hidden}
+.form-frame iframe{display:block;width:100%;height:1600px;border:0}
+@media (max-width:760px){.form-frame iframe{height:1900px}}
+.book .alt{text-align:center;font-size:14px;margin-top:14px}
+.book .alt a{color:#fff}
+.form-fallback{text-align:center}
+.form-fallback .btn{background:var(--ground);color:var(--ink)}
+.form-fallback .btn:hover{background:#fff}
+.book .after{text-align:center;font-size:14px;color:#DCE2F2;margin-top:20px}
+
+/* Footer */
+footer{background:var(--night);color:#B8B5CC;font-size:14px;padding:56px 0 calc(40px + env(safe-area-inset-bottom,0px))}
+footer a{color:var(--ground)}
+.foot-grid{display:grid;grid-template-columns:5fr 7fr;gap:48px}
+footer h3{font-size:16px;color:var(--ground);margin-bottom:10px}
+footer p{margin:0 0 8px}
+footer .sale-h{margin-top:24px}
+footer details summary{cursor:pointer;color:var(--ground);margin-bottom:8px}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:12px}
+footer .copy{margin-top:40px;font-size:12px}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+/* Mobile CTA */
+.mbar{display:none}
+@media (max-width:520px){
+  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(245,244,241,.96);border-top:1px solid var(--line);transition:transform .3s}
+  .mbar .btn{display:block;text-align:center}
+  .mbar.hide{transform:translateY(110%)}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+}
+
+/* FAQ chatbot */
+.bot-btn{position:fixed;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:70;width:58px;height:58px;border-radius:50%;border:0;background:var(--ruri);color:#fff;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center}
+.bot-btn:hover{background:var(--ruri-deep)}
+.bot-btn svg{width:26px;height:26px}
+.bot{position:fixed;right:24px;bottom:calc(96px + env(safe-area-inset-bottom,0px));z-index:71;width:min(380px,calc(100vw - 32px));height:min(560px,calc(100vh - 140px));background:#fff;border-radius:6px;box-shadow:0 12px 40px rgba(0,0,0,.25);display:flex;flex-direction:column;overflow:hidden}
+.bot[hidden]{display:none}
+.bot-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--night);color:var(--ground);border-bottom:2px solid var(--gold)}
+.bot-head b{font-family:var(--serif);font-size:16px}
+.bot-head button{background:none;border:0;color:var(--ground);font-size:22px;line-height:1;cursor:pointer;padding:2px 6px}
+.bot-log{flex:1;overflow-y:auto;padding:16px;position:relative;display:flex;flex-direction:column;gap:10px;background:var(--ground)}
+.msg{max-width:85%;padding:10px 13px;border-radius:12px;font-size:14px;line-height:1.6}
+.msg.b{background:#fff;color:var(--ink);border-top-left-radius:3px;align-self:flex-start}
+.msg.u{background:var(--ruri);color:#fff;border-top-right-radius:3px;align-self:flex-end}
+.msg .btn{margin-top:10px;padding:9px 14px;font-size:13px}
+.bot-chips{max-height:34%;overflow-y:auto;padding:10px 12px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;background:#fff}
+.bot-chips button{font:inherit;font-size:13px;border:1px solid var(--ruri);color:var(--ruri);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;text-align:left}
+.bot-chips button:hover{background:#EBEFF8}
+.bot-chips button.alt{border-color:var(--ink-soft);color:var(--ink-soft)}
+@media (max-width:520px){
+  .bot-btn{bottom:calc(84px + env(safe-area-inset-bottom,0px));right:16px;width:52px;height:52px}
+  .bot{right:16px;bottom:calc(146px + env(safe-area-inset-bottom,0px));height:min(520px,calc(100vh - 200px))}
+}
+@media (prefers-reduced-motion:no-preference){.bot{animation:botin .2s ease}@keyframes botin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sky,.sky .orb,.mbar{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top"><b id="brandName"></b><small id="brandSub"></small></a>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="ja" title="日本語">JA</button>
+      <button type="button" data-lang="en" title="English">EN</button>
+      <button type="button" data-lang="fr" title="Français">FR</button>
+      <button type="button" data-lang="de" title="Deutsch">DE</button>
+      <button type="button" data-lang="zh" title="繁體中文">繁中</button>
+    </div>
+    <a class="btn small" href="#book" data-t="ctaShort"></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero"></section>
+  <section class="empathy alt" id="empathy"></section>
+  <section class="story dark" id="story"></section>
+  <section class="video" id="video" hidden></section>
+  <section class="alt" id="expect"></section>
+  <section class="day" id="day"></section>
+  <section class="alt" id="take"></section>
+  <section id="artisans"></section>
+  <section id="price"></section>
+  <section class="alt" id="worries"></section>
+  <section id="steps"></section>
+  <section class="dark know" id="know"></section>
+  <section class="faq" id="faq"></section>
+  <section class="book" id="book"></section>
+</main>
+
+<div class="mbar hide"><a class="btn" href="#book" data-t="ctaMain"></a></div>
+<button class="bot-btn" type="button" aria-haspopup="dialog" aria-controls="bot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.9.7c0 1.7-2.4 2.3-2.4 2.3"/><path d="M12 15.5h.01"/></svg></button>
+<div class="bot" id="bot" role="dialog" aria-modal="false" hidden><div class="bot-head"><b class="bot-title"></b><button type="button" class="bot-x">×</button></div><div class="bot-log" aria-live="polite"></div><div class="bot-chips"></div></div>
+<footer id="footer"></footer>
+
+<script>
+/* ============================================================
+   設定：ここを書き換えるだけで反映されます
+   ============================================================ */
+const CONFIG = {
+  BRAND_JA: "バルト工房",      // ヘッダー・フッターに出すブランド名（日本語・繁體中文表示時）
+  BRAND_LATIN: "Balt Kobo",    // 同（英・仏・独表示時）
+  BRAND_SUB: "Ama, Aichi",     // ブランド名の下の小さな文字
+  FORM_URL: "https://forms.gle/h6qCfKEHDCuAaZiD7",          // Googleフォームの共有URL（https://forms.gle/...）
+  FORM_EMBED_URL: "",    // 空にしているため、予約ボタンはフォームを新しいタブで開きます（埋め込む場合のURL：https://docs.google.com/forms/d/e/1FAIpQLSfAmU78RgpiSnAKN6ea50Gcqh68aNouQ4BJybymA8o_8xMKHA/viewform?embedded=true）    // 埋め込み用URL（「送信」→「<>」のコード内 src="..." の部分）
+  VIDEO_EMBED_URL: "https://www.youtube-nocookie.com/embed/a-ZA-ShWR1Q",   // 動画の埋め込みURL（例：https://www.youtube.com/embed/xxxx）。空なら動画欄は非表示
+  SHOW_INSTAGRAM: false, // Instagramリンクをフッターに出すなら true
+  INSTAGRAM_URL: "",
+  EMAIL: "baltkobo@gmail.com",
+  TEL_INTL: "+81 561-42-6604", TEL_JP: "0561-42-6604", TEL_LINK: "+81561426604"
+};
+const NAMES = {
+  T: { ja: "田村有紀", zh: "田村有紀", latin: "Yuki Tamura" }
+};
+/* 匠の言葉（届いたら各言語で入れてください。空欄なら非表示） */
+const MESSAGES = {
+  T: {
+    ja:"その伝統工芸や志、熱量を誇りに思いながら、守りつつも攻め、新しい未来を作りたいと思います。",
+    en:"I take pride in this craft, its spirit and its passion. While protecting it, I want to keep pushing forward and create a new future.",
+    fr:"Je suis fière de cet artisanat, de son esprit et de sa passion. Tout en le préservant, je veux oser aller de l'avant et construire un nouvel avenir.",
+    de:"Ich bin stolz auf dieses Handwerk, seinen Geist und seine Leidenschaft. Ich möchte es bewahren und zugleich mutig weitergehen, um eine neue Zukunft zu gestalten.",
+    zh:"我以這項傳統工藝、它的志向與熱情為傲。在守護它的同時也勇於開創，想要創造新的未來。"
+  }
+};
+
+
+/* ============================================================
+   文章データ
+   ============================================================ */
+const C = {
+en:{
+  title:"Owari Shippo & Fermentation: A Private Day in Ama with a Fifth-Generation Artist",
+  nav:[["#story","Story"],["#day","The day"],["#artisans","The artist"],["#price","Price"],["#faq","FAQ"]],
+  ctaShort:"Request a date", ctaMain:"Request your date",
+  hero:{kicker:"A private day of cloisonné and fermentation, right next to Nagoya",
+    h1:"Draw in silver.<br>Fill it with color.",
+    lead:"In Ama, the birthplace of Owari shippo cloisonné, {T}, fifth generation of a family workshop founded in 1883, opens her studio to one group a day. Lay fine silver wire and glass enamel beside her, share her family's home-cooked lunch, step into a brewery that has made miso and tamari since 1874, and take your finished piece home that night.",
+    facts:["¥143,000 per person","One private group a day, 1–4 guests","About 11 hours, pickup in central Nagoya","Your own cloisonné pendant, yours the same day"],
+    micro:"Takes about a minute. Nothing to pay until we confirm your date.",
+    cap:["{T} at her workbench","Jimokuji Kannon","Sato Brewery","An example pendant"]},
+  emp:{h:"Most craft classes give you an hour at a crowded table. You rarely meet the person who has kept the craft alive.",
+    p:["You follow a template, someone else finishes your piece later, and you leave without knowing why the craft exists or who keeps it alive.",
+       "This day is the opposite. Your group is the only one. You learn the history first, then work beside the artist in her own studio, eat at her family's table, and end the day where this region's miso and soy sauce have been brewed for generations."]},
+  story:{h:"The village that taught itself cloisonné",
+    p:["The day begins at Jimokuji Kannon, a temple said to date back about 1,400 years and one of the four great Kannon temples of the Owari region. Around it, rice fields and old shrines still mark the land just outside Nagoya.",
+       "In the 1830s, Kaji Tsunekichi, a samurai of the Owari domain, studied a piece of Dutch cloisonné and worked out how it was made. The technique spread among the farming families of what is now Shippo-cho in Ama. Owari cloisonné was shown at the 1867 Paris Exposition and admired in Europe.",
+       "It was always the work of a whole village. Laying silver wire, filling enamel, firing again and again, polishing: each stage had its own specialists, and traditionally the makers did not sign their work.",
+       "A second tradition grew beside it. The warm, humid climate here suits koji mold, and the region is known for tamari soy sauce and soybean miso. Sato Brewery has been brewing them in Ama since 1874, in wooden barrels.",
+       "Today only about ten shippo businesses remain in the city. The people behind this day open their doors so that visitors from abroad can see these crafts while they are still made by hand, and help give them a future."],
+    land:"Jimokuji Kannon, where the day begins.",works:"The Ama City Shippo Art Village, where you learn the history before you make anything.",chain:["A 1,400-year-old temple","Owari shippo","Miso and tamari","Your table"]},
+  video:"Watch: cloisonné at Tamura Shippo",
+  expect:{h:"What you'll do",items:[
+    ["Begin at an ancient temple","Your guide introduces Jimokuji Kannon and the story of the land around it."],
+    ["Learn before you make","At the Shippo Art Village, see how Owari cloisonné is made and the pieces that made it famous."],
+    ["A private studio with {T}","The fifth-generation artist guides you as you lay silver wire and fill in enamel colors."],
+    ["Lunch at the family table","Home-style cooking with the Tamura family, then more time at the workbench."],
+    ["Inside a brewery","Wooden barrels, the scent of fermentation, and how miso and tamari are made at Sato Brewery."],
+    ["Dinner at a local favorite","Dinner at a Japanese restaurant well loved by local people."],
+    ["Your piece, finished","{T} fires and finishes your pendant, and it is yours before the day ends. How it reaches you is a small surprise."]]},
+  why:{h:"Why this day",items:[
+    ["Taught by the artist herself","{T}, fifth generation of Tamura Shippo, founded in 1883, guides you in person."],
+    ["One group a day","At most four guests. The studio time, meals and vehicle are yours alone."],
+    ["The story behind the craft","History at the museum first, so every step at the workbench makes sense."],
+    ["Two traditions in one day","Fire and glass in the morning, time and fermentation in the afternoon."],
+    ["Door to door","Pickup at your hotel in central Nagoya and a private vehicle all day."],
+    ["Take it home the same day","No months of waiting for shipping. Your piece travels home with you."],
+    ["Photos sent to you","Photos and short videos of your day are sent to you by WhatsApp."]]},
+  day:{h:"Your day, hour by hour",intro:"Everything is private to your group. A private vehicle takes you from your hotel and between every stop, and an English-speaking guide stays with you all day. Times may shift a little depending on how your piece is finishing.",stops:[
+    ["09:00","Pickup at your hotel","Your guide meets you in the lobby of your hotel, and the private vehicle sets off for Ama."],
+    ["09:30","Jimokuji Kannon","A temple said to be about 1,400 years old, and one of the four great Kannon temples of Owari. Your guide tells the story of the land you are about to explore.","jimokuji.jpg","dawn"],
+    ["10:00","The Shippo Art Village","At the Ama City Shippo Art Village, learn the history of Owari cloisonné, see how each stage is done, and look closely at the works that made the craft famous.","art-village.jpg","enamel"],
+    ["11:00","Into the Tamura studio","{T} welcomes you to Tamura Shippo, a family workshop since 1883. Under her guidance you begin your piece: shaping fine silver wire to draw the design, then filling it with glass enamel colors.","studio.jpg","enamel"],
+    ["12:00","Lunch at the family table, then back to work","Lunch is the Tamura family's own home cooking, such as rice balls and pork and vegetable miso soup. Afterwards you continue at the workbench, and {T} takes your piece on to firing and finishing."],
+    ["16:00","Sato Brewery","A short drive takes you to Sato Brewery, founded in 1874. Among tall wooden barrels, some of them older than the company itself, learn how miso and tamari soy sauce are made and why this region is known for them. The brewery calls the character given by the yeasts and bacteria living in its storehouse <i>kuraguse</i>, the brewery's own habit. At Ama no Kura, the brewery's shop, you can buy fresh miso and tamari.","brewery.jpg","warm"],
+    ["17:30","Dinner at a local favorite","Dinner at a Japanese restaurant well loved by the people of Ama. By the end of the meal your finished pendant is yours. How it reaches you, we'll keep as a surprise."],
+    ["20:00","Back at your hotel","The vehicle brings you back to your hotel, and the day comes to a close."]]},
+  take:{h:"What you take home",intro:"One cloisonné pendant made with your own hands and finished by the artist. No one else will have the same one.",
+    gH:"What you make",gP:"A cloisonné pendant top, with a chain included at no extra cost. You choose the design and the colors with {T} on the day. The photos show examples.",g:["Pendant","A design drawn in silver wire","Colors of your choice","Works from the Tamura studio"],bH:"From copper and silver to a finished piece",
+    ba:["Laying the silver wire","Enamel colors filled in","Fired and polished"],
+    items:[["Before the day ends: your pendant","{T} fires and finishes your pendant in the afternoon, and it is yours by the end of dinner. Exactly how it reaches you is a small surprise we would rather not spoil."],
+      ["Easy to carry","A pendant fits in your hand luggage, so there is no international shipping to arrange."],
+      ["Firing takes the time it needs","Each piece is fired and polished by hand, so the order of the afternoon may shift slightly. Your guide keeps you informed. In the rare case it is not ready in time, we send it to you by EMS at our cost."]],
+    note:"Works by {T} and Sato Brewery's miso and tamari can be bought on the day if you wish. These purchases are not included in the price."},
+  people:{h:"The people who welcome you",intro:"The craft at the heart of this day is taught by the artist herself. The brewery and the dinner are run by people who make their living from this land.",team:"The Tamura Shippo studio in Ama, where you spend most of the day.",list:[
+    ["T","Fifth-generation shippo artist, Tamura Shippo","A family workshop since 1883","She studied architecture at Musashino Art University in Tokyo and, from her student days, spent nearly ten years performing as a musician. After working in web design and in stage and event production, she returned to the family workshop in 2012 to train under her father, the fourth generation, and in 2015 launched her own cloisonné jewelry brand. Her work has been selected twice for Japan's National Traditional Craft Competition (2021, 2022) and shown in a solo exhibition at Matsuzakaya Nagoya (2020), in London (2019) and in an exhibition that toured Kyoto, Tokyo, Nagoya and New York (2023). In 2023 she created a cloisonné poster visual for Disney and Pixar's <i>Elemental</i>. On the day, she works right beside you at the bench.","tamura.jpg"],
+    ["Sato Brewery","Miso and tamari brewery, Ama","Founded in 1874","Sato Brewery has brewed in Shippo-cho since 1874, and some of its wooden barrels were made before the company was founded. The yeasts and lactic acid bacteria living in the storehouse give its miso a character of its own, and its soybean miso is made to be mellow and less astringent than most. The brewery opens its doors to show how miso and tamari are made.","sato.jpg"]]},
+  price:{h:"Price",amount:"¥143,000",per:"per person, tax included",
+    rows:[["Group size","1–4 guests, one private group a day"],["Time","About 11 hours, 9:00–20:00, from and back to your hotel in central Nagoya"],["Payment","By PayPal within 3 days of confirmation"],["Language","Guided in English"]],
+    incH:"Included",inc:["Private cloisonné session with {T}, and your finished pendant with a chain","Shippo Art Village admission","Home-cooked lunch with the Tamura family","Visit to Sato Brewery","Dinner at a Japanese restaurant loved by locals","Private guide for the whole day","Private vehicle from your hotel and between all stops","Photos and short videos of your day, sent by WhatsApp"],
+    excH:"Not included",exc:["Travel to Nagoya and your accommodation","Purchases, such as works by {T} or brewery products","Other personal expenses"]},
+  worries:{h:"Common worries, answered",items:[
+    ["Money","Is it worth the price?","The whole day is private and included: hotel pickup, a private vehicle and guide, studio time with the artist herself, museum admission, lunch, the brewery and dinner. Your finished piece goes home with you that night."],
+    ["Time","Is it worth a whole day of my trip?","Ama is next to Nagoya, so there is no long train journey. You are collected at your hotel at 9:00 and brought back around 20:00, with nothing to plan in between."],
+    ["Confidence","I'm not artistic. Will my piece turn out well?","No experience is needed. {T} guides you step by step, and she does the firing and finishing herself."],
+    ["Body","Is it physically demanding?","Most of the day is seated work at the studio, with short walks at each stop. The work is fine and detailed, so if you use reading glasses, please bring them."]]},
+  steps:{h:"From request to your piece in hand",items:[
+    ["Send a request","It takes about a minute, and you'll get a confirmation email right away."],
+    ["We confirm availability","We check with the studio, the brewery and the restaurant, and reply within 3 business days."],
+    ["Pay by PayPal","Once confirmed, we send a PayPal payment link. Please pay within 3 days to secure your date."],
+    ["Pre-trip email","One week before, we send your pickup details and what to bring."],
+    ["Your day in Ama","On the day we stay in touch by WhatsApp, and send your photos and videos the same way."],
+    ["Your piece in your hands","Your finished pendant is yours before the day ends, ready to travel home with you."]]},
+  know:{h:"Know before you go",items:[
+    "Pickup at your hotel lobby at 9:00, and back at your hotel around 20:00. Pickup is for hotels in central Nagoya, around Nagoya Station, Sakae, Fushimi or Kanayama; please tell us your hotel when you request.",
+    "Not available on Mondays, or during Japanese holiday periods: Golden Week (late April to early May), Obon (mid-August), Silver Week (late September, in some years) or the New Year holidays (late December to early January). Some other dates may also be unavailable.",
+    "Requests close 20 days before your date, at 18:00 Japan time.",
+    "One private group a day, up to 4 guests. If children will join, please tell us their ages when you request.",
+    "The work uses fine silver wire and small tools. If you use reading glasses, please bring them.",
+    "Japanese cooking often uses soy, in miso and soy sauce. We can adapt meals for allergies and vegan diets if you tell us when you request. We are unable to offer halal meals.",
+    "The order of the day may shift slightly depending on how your piece is finishing.",
+    "Our office is closed on weekends, Japanese public holidays, Obon and the New Year holidays, so replies may take longer then."],
+    cxH:"Cancellation policy",cx:[["15 or more days before","Free"],["7–14 days before","20%"],["2–6 days before","50%"],["The day before","50%"],["On the day","100%"]],cxNote:"Percentages are of the tour price."},
+  bot:{"title":"Questions about the tour","hello":"Hello! Tap a question below and I'll answer right away.","extra":[["How much does it cost?","¥143,000 per person, tax included, for a private group of 1–4. Hotel pickup, the private guide and vehicle, admission, lunch, dinner and your finished piece are included."],["When is the tour available?","One group a day, 9:00–20:00. Not available on Mondays, or during Japanese holiday periods: Golden Week (late April to early May), Obon (mid-August), Silver Week (late September, in some years) and the New Year holidays (late December to early January). Requests close 20 days before your date."]],"other":"I have another question","otherA":"Please send it with the request form and choose “Question only.” We'll reply by email within 3 business days.","book":"Go to the request form","more":"Anything else?","open":"Open questions chat","close":"Close"},
+  faq:{h:"Questions",items:[
+    ["Do I need any experience?","No. {T} guides you step by step, from shaping the silver wire to choosing colors, and she does the firing and finishing herself."],
+    ["What will I make?","A cloisonné pendant top, with a design drawn in silver wire and filled with enamel colors you choose. A chain is included at no extra cost."],
+    ["Do I take my piece home the same day?","Yes. {T} fires and finishes it in the afternoon, and it is yours by the end of dinner. Because firing and polishing take the time they need, the order of the day may shift slightly. In the rare case it is not ready in time, we send it to you by EMS at our cost."],
+    ["Can I buy the artist's own work?","Yes, there is time at the studio to see and buy works by {T} if you wish. Purchases are not included in the price."],
+    ["Where do you pick us up?","In the lobby of your hotel at 9:00, and you are brought back there around 20:00. Pickup is for hotels in central Nagoya, around Nagoya Station, Sakae, Fushimi or Kanayama; please tell us your hotel when you request."],
+    ["What language is the tour in?","The tour is guided in English only. Your English-speaking guide stays with you all day and translates the artist's words."],
+    ["Can you cater to dietary needs?","Lunch is the Tamura family's home cooking, such as rice balls and pork and vegetable miso soup, and dinner is Japanese cooking at a local restaurant. Japanese cooking often uses soy, in miso and soy sauce. We can adapt meals for allergies and vegan diets if you tell us when you request. We are unable to offer halal meals."],
+    ["Can children join?","Please tell us their ages when you request, and we'll confirm whether the work suits them. The price is per person."],
+    ["Can I join on my own?","Yes. The tour runs from one guest, and the price is the same per person."],
+    ["How do I pay?","After we confirm your date, we send a PayPal payment link. Please pay within 3 days to secure your date."],
+    ["What is the cancellation policy?","15 or more days before: free. 7–14 days before: 20% of the tour price. 2–6 days before: 50%. The day before: 50%. On the day: 100%."],
+    ["What if it rains?","Most of the day is spent indoors and you travel by private vehicle, so rain has little effect on the day."],
+    ["What should I wear?","Comfortable clothes and shoes you can walk in. There are short walks at the temple and between stops."],
+    ["Can I take photos?","Of course. Please follow any requests from the studio or brewery about photos. We also send you photos and short videos of your day by WhatsApp."],
+    ["Can I take miso or tamari home?","Brewery products can be bought on the day. Please check your own country's rules on bringing food home before you buy."],
+    ["I have another question.","Please use the request form below and choose “Question only.” We'll reply by email."]]},
+  book:{h:"Request your date",p:"One private group a day. Send your preferred date and we'll reply within 3 business days.",micro:"You won't be charged until we confirm your date.",alt:"Trouble seeing the form? Open it in a new tab.",btn:"Open the request form",after:"Have a question instead? Use the same form and choose “Question only.”"},
+  foot:{saleH:"Sold by",sale:"Act-U Travel Co., Ltd. (株式会社アクト・ユートラベル)<br>Registered travel agency, Commissioner of the Japan Tourism Agency, No. 1102<br>HP Otsu-dori Bldg. 2F, 3-5-28 Nishiki, Naka-ku, Nagoya, Aichi 460-0003, Japan<br>+81 52-951-4451",opH:"Tour planning and operation",op:"Balt Kobo<br>3 Nakakiri-cho, Seto, Aichi 489-0042, Japan",privH:"Privacy notice",
+    priv:"We use the information you send through the request form (such as names, email, phone number, hotel, dates, number of guests and dietary needs) only to answer your request and run your tour. We share it only with the travel agency selling the tour and the studio, brewery, restaurant and transport involved in your day, and we never sell it. To see or delete your information, email us.",
+    ig:"Instagram"}
+},
+
+ja:{
+  title:"尾張七宝と発酵の旅　五代目七宝作家と過ごす、あま市完全貸切の一日",
+  nav:[["#story","ストーリー"],["#day","一日の流れ"],["#artisans","匠の紹介"],["#price","料金"],["#faq","よくある質問"]],
+  ctaShort:"日程をリクエスト", ctaMain:"希望日をリクエストする",
+  hero:{kicker:"名古屋のすぐ隣で、七宝焼と発酵文化に浸る完全貸切ツアー",
+    h1:"銀の線で描き、<br>色ガラスで満たす。",
+    lead:"尾張七宝発祥の地・あま市。1883年創業の工房で五代目を継ぐ{T}さんが、1日1組だけにアトリエを開きます。作家の隣で銀線を植え、釉薬を差し、田村家の家庭料理を囲み、1874年創業の醸造蔵で味噌とたまりの香りに包まれる。仕上がった作品は、その日のうちにお持ち帰りいただけます。",
+    facts:["1名 143,000円（税込）","1日1組の完全貸切・1〜4名","約11時間・名古屋市内ホテル送迎付き","自分の七宝ペンダントトップを、その日のうちに"],
+    micro:"入力は約1分。日程が確定するまでお支払いは発生しません。",
+    cap:["工房で制作する{T}さん","甚目寺観音","佐藤醸造","ペンダントトップの見本"]},
+  emp:{h:"多くの工芸体験は、混み合う机で過ごす1時間。その技を守ってきた作り手本人に会えることは、ほとんどありません。",
+    p:["見本どおりに手を動かし、仕上げは後で誰かが行う。その工芸がなぜ生まれ、誰が守っているのかを知らないまま帰ることになります。",
+       "この一日は、その反対です。参加するのはあなたのグループだけ。まず歴史を学び、作家本人のアトリエで隣に座って制作し、作家の家族の食卓を囲み、この土地で代々醸されてきた味噌と醤油の蔵で一日を締めくくります。"]},
+  story:{h:"七宝を、自らの手で解き明かした村",
+    p:["一日は、甚目寺観音から始まります。創建から約1,400年と伝わり、尾張四観音のひとつに数えられる古刹です。周囲には今も田んぼと古社が残り、名古屋のすぐ隣とは思えない風景が広がります。",
+       "1830年代、尾張藩士の梶常吉が、オランダ船がもたらした七宝の皿を研究し、その製法を独自に解き明かしました。技術は現在のあま市七宝町の農家に広まり、尾張七宝は1867年のパリ万国博覧会に出品され、ヨーロッパで賞賛を受けました。",
+       "七宝は、村全体でつくるものでした。銀線を植える、釉薬を差す、何度も焼く、磨く。工程ごとに専門の職人がいて、作り手は作品に名前を記さないのが習わしでした。",
+       "そのそばで、もうひとつの伝統が育ちました。温暖で湿潤な気候は麹づくりに適し、この地方はたまり醤油と豆味噌で知られています。佐藤醸造は、1874年の創業以来、あま市で木桶を使って味噌とたまりを醸してきました。",
+       "七宝焼に携わる事業者は、今や市内でわずか10軒ほど。この一日に協力する人々が扉を開くのは、手仕事が今も息づくうちに海外の人に見てもらい、その未来につなげたいからです。"],
+    land:"一日の始まりの地、甚目寺観音。",works:"あま市七宝焼アートヴィレッジ。つくる前に、まず歴史を学びます。",chain:["1,400年の古刹","尾張七宝","味噌とたまり","あなたの食卓"]},
+  video:"映像で見る田村七宝工芸",
+  expect:{h:"この一日でできること",items:[
+    ["古刹から始まる一日","ガイドが甚目寺観音と、この土地の物語をご案内します。"],
+    ["つくる前に、知る","七宝焼アートヴィレッジで、尾張七宝の製法と、その名を世界に広めた名品に触れます。"],
+    ["{T}さんの工房を貸切で","五代目作家の指導のもと、銀線を植え、釉薬を差していきます。"],
+    ["田村家の食卓で昼食","家庭料理を囲んだあと、再び作業台へ。"],
+    ["醸造蔵の中へ","木桶が並ぶ佐藤醸造の蔵で、発酵の香りと味噌・たまりの造り方に触れます。"],
+    ["地元民に親しまれる食どころで夕食","地元の人々に親しまれる和食処で、夕食をいただきます。"],
+    ["仕上がった作品を手に","{T}さんが焼成・仕上げを行い、一日の終わりまでにお渡しします。どのように手元に届くかは、当日のお楽しみです。"]]},
+  why:{h:"選ばれる理由",items:[
+    ["作家本人が教える","1883年創業・田村七宝工芸の五代目、{T}さんが直接指導します。"],
+    ["1日1組だけ","最大4名。工房での時間、食事、移動の車は、あなたのグループだけのものです。"],
+    ["工芸の背景まで","先に資料館で歴史を学ぶので、作業台での一つひとつの工程に意味が生まれます。"],
+    ["ふたつの伝統を一日で","午前は炎とガラス、午後は時間と発酵。"],
+    ["ホテルからホテルまで","名古屋市内のホテルでお迎えし、一日中専用車で移動します。"],
+    ["その日のうちに持ち帰れる","何か月も配送を待つ必要はありません。作品はあなたと一緒に旅をします。"],
+    ["写真をお届け","当日の写真と短い動画を、WhatsAppでお送りします。"]]},
+  day:{h:"一日の流れ",intro:"すべてあなたのグループだけの貸切です。ホテルから各訪問先まで専用車で移動し、英語ガイドが一日同行します。作品の仕上がり具合によって、時間が前後する場合があります。",stops:[
+    ["09:00","ホテルでお迎え","ガイドがホテルのロビーでお待ちしています。専用車であま市へ向かいます。"],
+    ["09:30","甚目寺観音","創建約1,400年と伝わる、尾張四観音のひとつ。これから巡る土地の物語を、ガイドがお話しします。","jimokuji.jpg","dawn"],
+    ["10:00","七宝焼アートヴィレッジ","あま市七宝焼アートヴィレッジで、尾張七宝の歴史と各工程の技を学び、その名を広めた作品をじっくり鑑賞します。","art-village.jpg","enamel"],
+    ["11:00","田村七宝工芸の工房へ","1883年創業の田村七宝工芸で、{T}さんがお迎えします。作家の指導のもと、細い銀線で図柄を描き、色ガラスの釉薬を差して、作品づくりを始めます。","studio.jpg","enamel"],
+    ["12:00","田村家の食卓、そして制作の続き","昼食は、おにぎりや豚汁など、田村家のふだんの家庭料理です。食後は再び作業台へ。その後、{T}さんが焼成と仕上げを進めます。"],
+    ["16:00","佐藤醸造","専用車で、1874年創業の佐藤醸造へ。木桶が並ぶ蔵で、味噌とたまり醤油の造り方と、この地方がその名産地となった理由を学びます。木桶の中には創業より前につくられたものもあり、蔵に棲みついた酵母や乳酸菌が、この蔵だけの風味「蔵ぐせ」を生みます。直売所「あまの蔵」では、できたての味噌やたまりもお買い求めいただけます。","brewery.jpg","warm"],
+    ["17:30","地元民に親しまれる食どころで夕食","地元の人々に親しまれる和食処で、夕食をいただきます。食事が終わるまでに、仕上がった作品があなたのものに。どのように届くかは、当日のお楽しみです。"],
+    ["20:00","ホテルへ","専用車でホテルまでお送りし、一日が終わります。"]]},
+  take:{h:"持ち帰るもの",intro:"自分の手でつくり、作家が仕上げた七宝のペンダントトップがひとつ。世界に同じものはありません。",
+    gH:"つくるもの",gP:"七宝のペンダントトップです。チェーンは無料でお付けします。図柄と色は、当日{T}さんと相談して決めます。写真は見本です。",g:["ペンダントトップ","銀線で描く図柄","好きな色の釉薬","田村七宝工芸の作品"],bH:"銅と銀から、完成品へ",
+    ba:["銀線を植える","釉薬を差す","焼成し、磨いて完成"],
+    items:[["一日の終わりまでに、作品を","{T}さんが午後に焼成・仕上げを行い、夕食が終わるまでにお渡しします。どのように手元に届くかは、当日のお楽しみにしておきます。"],
+      ["持ち運びやすい","ペンダントトップなので手荷物に収まり、国際配送の手配は要りません。"],
+      ["焼成には必要な時間をかけます","一つひとつ手作業で焼き、磨くため、午後の順番が前後する場合があります。ガイドが随時お知らせします。万一当日に間に合わない場合は、当方の負担でEMSにてお送りします。"]],
+    note:"{T}さんの作品や、佐藤醸造の味噌・たまりは当日ご購入いただけます。購入代金は料金に含まれません。"},
+  people:{h:"あなたを迎える人々",intro:"この一日の中心となる七宝は、作家本人が教えます。醸造蔵と夕食は、この土地に根ざして生きる人々が担います。",team:"一日の大半を過ごす、あま市の田村七宝工芸の工房。",list:[
+    ["T","田村七宝工芸 五代目・七宝作家","1883年創業の工房","武蔵野美術大学で建築を学び、在学中から約10年、音楽活動でもステージに立つ。卒業後はウェブデザインや舞台・イベント制作の仕事を経て、2012年に家業へ戻り、四代目である父に師事。2015年に自身の七宝ジュエリーブランドを立ち上げる。全国伝統的工芸品公募展に入選（2021年・2022年）、松坂屋名古屋店で個展（2020年）、ロンドンでの展示（2019年）、京都・東京・名古屋・ニューヨークを巡回した展覧会（2023年）など、国内外で発表を続ける。2023年にはディズニー＆ピクサー映画『マイ・エレメント』のポスタービジュアルを七宝で制作。当日は、あなたの作業台のすぐそばで導きます。","tamura.jpg"],
+    ["佐藤醸造","あま市の味噌・たまり醸造蔵","1874年創業","明治7年（1874年）から七宝町で醸造を続け、木桶の中には創業より前につくられたものもあります。蔵に棲む酵母や乳酸菌が生む、その蔵だけの風味を「蔵ぐせ」と呼び、渋みが少なくふっくらとした豆みそが特徴です。蔵を開き、味噌とたまりの造りを伝えます。","sato.jpg"]]},
+  price:{h:"料金",amount:"143,000円",per:"1名あたり（税込）",
+    rows:[["人数","1〜4名・1日1組の貸切"],["時間","約11時間（9:00〜20:00）、名古屋市内のホテル送迎付き"],["お支払い","予約確定後3日以内にPayPalで"],["言語","英語ガイド"]],
+    incH:"料金に含まれるもの",inc:["{T}さんによる七宝制作の個別指導と、完成したペンダントトップ（チェーン付き）","七宝焼アートヴィレッジ入館料","田村家の家庭料理ランチ","佐藤醸造の醸造蔵見学","地元民に親しまれる食どころでの夕食","一日専属のガイド","ホテルからの送迎と、全行程の専用車","当日の写真と短い動画（WhatsAppでお届け）"],
+    excH:"料金に含まれないもの",exc:["名古屋までの交通費と宿泊費","{T}さんの作品や蔵の商品などのご購入費","その他の個人的な費用"]},
+  worries:{h:"よくある不安にお答えします",items:[
+    ["お金","この料金に見合いますか？","一日すべてが貸切で、ホテル送迎、専用車とガイド、作家本人との制作時間、資料館入館料、昼食、醸造蔵、夕食まで含まれています。仕上がった作品は、その夜に持ち帰れます。"],
+    ["時間","旅の丸一日を使う価値はありますか？","あま市は名古屋のすぐ隣。長い電車移動はありません。9:00にホテルでお迎えし、20:00ごろにお送りします。その間、何も手配する必要はありません。"],
+    ["心理","不器用でも、きれいに仕上がりますか？","経験は要りません。{T}さんが一つひとつ導き、焼成と仕上げは作家本人が行います。"],
+    ["身体","体力的にきつくありませんか？","一日の大半は工房で座っての作業で、各所では短い距離を歩く程度です。細かな作業なので、老眼鏡をお使いの方はお持ちください。"]]},
+  steps:{h:"お申し込みから作品を手にするまで",items:[
+    ["リクエストを送る","入力は約1分。送信するとすぐに確認メールが届きます。"],
+    ["空き状況のご連絡","工房、醸造蔵、料理店に確認し、3営業日以内にお返事します。"],
+    ["PayPalでお支払い","確定後、PayPalの支払いリンクをお送りします。3日以内にお支払いいただくと日程が確保されます。"],
+    ["事前のご案内","1週間前に、お迎えの詳細と持ち物をメールでお送りします。"],
+    ["あま市での一日","当日の連絡はWhatsAppで。写真と動画も同じくWhatsAppでお届けします。"],
+    ["作品を手に","仕上がった作品は一日の終わりまでにお渡しし、そのままお持ち帰りいただけます。"]]},
+  know:{h:"ご参加の前に",items:[
+    "9:00にホテルロビーでお迎えし、20:00ごろにホテルまでお送りします。送迎は名古屋市内（名古屋駅・栄・伏見・金山周辺）のホテルが対象です。リクエスト時に宿泊先をお知らせください。",
+    "毎週月曜日と、ゴールデンウィーク（4月下旬〜5月上旬）、お盆（8月中旬）、シルバーウィーク（年により9月下旬）、年末年始（12月下旬〜1月上旬）は催行していません。そのほかにもお受けできない日があります。",
+    "リクエストの締め切りは、ご希望日の20日前の18:00（日本時間）です。",
+    "1日1組・最大4名の貸切です。お子さまが参加される場合は、リクエスト時に年齢をお知らせください。",
+    "細い銀線と小さな道具を使います。老眼鏡をお使いの方はお持ちください。",
+    "和食には味噌や醤油など大豆を使うことが多くあります。アレルギーとビーガンには、リクエスト時にお知らせいただければ対応します。ハラール対応はできません。",
+    "作品の仕上がり具合によって、行程の順番が前後する場合があります。",
+    "事務所は土日祝日・お盆・年末年始が休みのため、その間はお返事にお時間をいただくことがあります。"],
+    cxH:"取消料",cx:[["15日前まで","無料"],["7〜14日前","20%"],["2〜6日前","50%"],["前日","50%"],["当日","100%"]],cxNote:"ツアー料金に対する割合です。"},
+  bot:{"title":"ツアーについてのご質問","hello":"こんにちは。下の質問をタップすると、すぐにお答えします。","extra":[["料金はいくらですか？","1名143,000円（税込）、1〜4名の貸切です。ホテル送迎、専属ガイドと専用車、入館料、昼食、夕食、完成作品が含まれます。"],["いつ参加できますか？","1日1組、9:00〜20:00です。毎週月曜日と、ゴールデンウィーク（4月下旬〜5月上旬）、お盆（8月中旬）、シルバーウィーク（年により9月下旬）、年末年始（12月下旬〜1月上旬）は催行していません。リクエストはご希望日の20日前までです。"]],"other":"ほかの質問がある","otherA":"リクエストフォームで「質問のみ」を選んでお送りください。3営業日以内にメールでお返事します。","book":"リクエストフォームへ","more":"ほかにご質問はありますか？","open":"質問チャットを開く","close":"閉じる"},
+  faq:{h:"よくある質問",items:[
+    ["経験がなくても大丈夫ですか？","大丈夫です。銀線の形づくりから色選びまで{T}さんが一つひとつ導き、焼成と仕上げは作家本人が行います。"],
+    ["何をつくりますか？","七宝のペンダントトップです。銀線で図柄を描き、好きな色の釉薬で満たします。チェーンは無料でお付けします。"],
+    ["作品はその日に持ち帰れますか？","はい。{T}さんが午後に焼成・仕上げを行い、夕食が終わるまでにお渡しします。焼成と研磨には必要な時間をかけるため、行程の順番が前後する場合があります。万一当日に間に合わない場合は、当方の負担でEMSにてお送りします。"],
+    ["作家の作品を購入できますか？","はい。工房で{T}さんの作品をご覧いただき、ご希望の方はお買い求めいただけます。購入代金は料金に含まれません。"],
+    ["どこで迎えてもらえますか？","9:00にホテルのロビーでお迎えし、20:00ごろに同じホテルまでお送りします。送迎は名古屋市内（名古屋駅・栄・伏見・金山周辺）のホテルが対象です。リクエスト時に宿泊先をお知らせください。"],
+    ["案内は何語ですか？","案内は英語のみです。英語ガイドが一日同行し、作家の言葉も通訳します。"],
+    ["食事制限に対応できますか？","昼食はおにぎりや豚汁などの田村家の家庭料理、夕食は地元の和食処の料理です。和食には味噌や醤油など大豆を使うことが多くあります。アレルギーとビーガンには、リクエスト時にお知らせいただければ対応します。ハラール対応はできません。"],
+    ["子どもも参加できますか？","リクエスト時に年齢をお知らせください。作業内容が合うかを確認してご連絡します。料金は1名あたりです。"],
+    ["1人でも参加できますか？","はい。1名から催行し、料金は1名あたり同額です。"],
+    ["支払い方法は？","日程の確定後にPayPalの支払いリンクをお送りします。3日以内にお支払いいただくと日程が確保されます。"],
+    ["取消料は？","15日前まで：無料、7〜14日前：ツアー料金の20%、2〜6日前：50%、前日：50%、当日：100%です。"],
+    ["雨の日はどうなりますか？","一日の大半は屋内で過ごし、移動は専用車なので、雨の影響はほとんどありません。"],
+    ["服装は？","動きやすい服と歩きやすい靴でお越しください。寺院や各所で少し歩きます。"],
+    ["写真は撮れますか？","もちろんです。工房や蔵で撮影についてお願いがあれば、それに従ってください。当日の写真と短い動画は、WhatsAppでもお送りします。"],
+    ["味噌やたまりを持ち帰れますか？","蔵の商品は当日ご購入いただけます。食品の持ち込みはお国によって規則が異なるため、購入前にご確認ください。"],
+    ["ほかの質問があります。","下のリクエストフォームで「質問のみ」を選んでお送りください。メールでお返事します。"]]},
+  book:{h:"希望日をリクエストする",p:"1日1組の貸切です。ご希望の日程をお送りください。3営業日以内にお返事します。",micro:"日程が確定するまでお支払いは発生しません。",alt:"フォームがうまく表示されない場合は、新しいタブで開いてください。",btn:"リクエストフォームを開く",after:"ご質問だけの方も、同じフォームで「質問のみ」をお選びください。"},
+  foot:{saleH:"販売元",sale:"株式会社アクト・ユートラベル<br>観光庁長官登録旅行業 第1102号<br>〒460-0003 愛知県名古屋市中区錦3-5-28 HP大津通ビル2F<br>052-951-4451",opH:"企画・実施",op:"バルト工房<br>〒489-0042 愛知県瀬戸市仲切町3",privH:"個人情報の取り扱い",
+    priv:"リクエストフォームでお送りいただいた情報（お名前、メールアドレス、電話番号、宿泊先、日程、人数、食事制限など）は、お問い合わせへの回答とツアーの運営にのみ使用します。販売元の旅行会社と、当日関わる工房・醸造蔵・料理店・移動手段の手配先にのみ共有し、販売することはありません。開示や削除をご希望の場合はメールでご連絡ください。",
+    ig:"Instagram"}
+},
+
+fr:{
+  title:"Émail cloisonné d'Owari et fermentation : une journée privée à Ama avec une artiste de cinquième génération",
+  nav:[["#story","Histoire"],["#day","La journée"],["#artisans","L'artiste"],["#price","Tarif"],["#faq","FAQ"]],
+  ctaShort:"Demander une date", ctaMain:"Demander votre date",
+  hero:{kicker:"Une journée privée d'émail cloisonné et de fermentation, aux portes de Nagoya",
+    h1:"Dessiner en argent.<br>Remplir de couleur.",
+    lead:"À Ama, berceau de l'émail cloisonné d'Owari (shippo), {T}, cinquième génération d'un atelier familial fondé en 1883, ouvre son atelier à un seul groupe par jour. Posez le fil d'argent et l'émail à ses côtés, partagez le déjeuner fait maison de sa famille, entrez dans une brasserie qui produit miso et tamari depuis 1874, et repartez le soir même avec votre pièce terminée.",
+    facts:["143 000 ¥ par personne","Un seul groupe privé par jour, 1 à 4 personnes","Environ 11 heures, prise en charge au centre de Nagoya","Votre propre pendentif en émail cloisonné, à vous le jour même"],
+    micro:"Environ une minute. Rien à payer avant la confirmation de votre date.",
+    cap:["{T} à son établi","Temple Jimokuji Kannon","Brasserie Sato","Exemple de pendentif"]},
+  emp:{h:"La plupart des ateliers d'artisanat, c'est une heure à une table bondée. On y rencontre rarement celui ou celle qui fait vivre ce savoir-faire.",
+    p:["On suit un modèle, quelqu'un d'autre termine la pièce plus tard, et l'on repart sans savoir pourquoi cet art existe ni qui le fait vivre.",
+       "Cette journée est tout le contraire. Votre groupe est le seul. Vous découvrez d'abord l'histoire, puis vous travaillez aux côtés de l'artiste dans son propre atelier, vous partagez la table de sa famille et vous terminez là où l'on brasse depuis des générations le miso et la sauce soja de la région."]},
+  story:{h:"Le village qui a percé seul le secret du cloisonné",
+    p:["La journée commence au Jimokuji Kannon, un temple dont la fondation remonterait à environ 1 400 ans et l'un des quatre grands temples de Kannon de la région d'Owari. Autour, rizières et anciens sanctuaires marquent encore le paysage, juste à côté de Nagoya.",
+       "Dans les années 1830, Kaji Tsunekichi, un samouraï du domaine d'Owari, étudia une pièce de cloisonné hollandaise et en découvrit seul le procédé. La technique se répandit parmi les familles paysannes de l'actuel Shippo-cho, à Ama. Le cloisonné d'Owari fut présenté à l'Exposition universelle de Paris de 1867 et admiré en Europe.",
+       "C'était l'œuvre d'un village entier. Poser le fil d'argent, déposer l'émail, cuire encore et encore, polir : chaque étape avait ses spécialistes, et la tradition voulait que les artisans ne signent pas leurs pièces.",
+       "Une seconde tradition est née à côté. Le climat chaud et humide convient au koji, et la région est réputée pour sa sauce soja tamari et son miso de soja. La brasserie Sato en produit à Ama depuis 1874, dans des fûts en bois.",
+       "Il ne reste aujourd'hui qu'une dizaine d'ateliers de cloisonné dans la ville. Les personnes qui vous accueillent ouvrent leurs portes pour que des visiteurs du monde entier découvrent ces savoir-faire tant qu'ils se pratiquent encore à la main, et pour leur offrir un avenir."],
+    land:"Le Jimokuji Kannon, où commence la journée.",works:"Le Shippo Art Village d'Ama : on apprend l'histoire avant de créer.",chain:["Un temple de 1 400 ans","Le cloisonné d'Owari","Miso et tamari","Votre table"]},
+  video:"L'émail cloisonné chez Tamura Shippo en vidéo",
+  expect:{h:"Ce que vous ferez",items:[
+    ["Commencer dans un temple ancien","Votre guide vous présente le Jimokuji Kannon et l'histoire de la terre qui l'entoure."],
+    ["Comprendre avant de créer","Au Shippo Art Village, découvrez la fabrication du cloisonné d'Owari et les pièces qui l'ont rendu célèbre."],
+    ["Un atelier privé avec {T}","L'artiste de cinquième génération vous guide pour poser le fil d'argent et déposer les émaux."],
+    ["Déjeuner à la table familiale","Une cuisine maison avec la famille Tamura, puis retour à l'établi."],
+    ["Au cœur d'une brasserie","Fûts en bois, parfum de fermentation et fabrication du miso et du tamari à la brasserie Sato."],
+    ["Un dîner dans une adresse locale","Dîner dans un restaurant japonais apprécié des habitants."],
+    ["Votre pièce, terminée","{T} cuit et finit votre pendentif, qui est à vous avant la fin de la journée. La façon dont il vous parvient reste une petite surprise."]]},
+  why:{h:"Pourquoi cette journée",items:[
+    ["Enseigné par l'artiste elle-même","{T}, cinquième génération de l'atelier Tamura Shippo fondé en 1883, vous guide en personne."],
+    ["Un seul groupe par jour","Quatre personnes au maximum. L'atelier, les repas et le véhicule sont pour vous seuls."],
+    ["L'histoire derrière l'art","D'abord le musée, pour que chaque geste à l'établi prenne tout son sens."],
+    ["Deux traditions en une journée","Le feu et le verre le matin, le temps et la fermentation l'après-midi."],
+    ["D'hôtel à hôtel","Prise en charge à votre hôtel au centre de Nagoya et véhicule privé toute la journée."],
+    ["À emporter le jour même","Pas d'envoi à attendre pendant des mois : votre pièce voyage avec vous."],
+    ["Vos photos envoyées","Photos et courtes vidéos de votre journée envoyées par WhatsApp."]]},
+  day:{h:"Votre journée, heure par heure",intro:"Tout est privé pour votre groupe. Un véhicule privé vous emmène depuis votre hôtel et entre chaque étape, et un guide anglophone vous accompagne toute la journée. Les horaires peuvent légèrement varier selon l'avancement de votre pièce.",stops:[
+    ["09:00","Prise en charge à votre hôtel","Votre guide vous attend dans le hall de votre hôtel, puis le véhicule privé part pour Ama."],
+    ["09:30","Jimokuji Kannon","Un temple dont la fondation remonterait à environ 1 400 ans, l'un des quatre grands temples de Kannon d'Owari. Votre guide raconte l'histoire de la terre que vous allez découvrir.","jimokuji.jpg","dawn"],
+    ["10:00","Le Shippo Art Village","Au Shippo Art Village d'Ama, découvrez l'histoire du cloisonné d'Owari, chaque étape de sa fabrication et les œuvres qui l'ont rendu célèbre.","art-village.jpg","enamel"],
+    ["11:00","Dans l'atelier Tamura","{T} vous accueille chez Tamura Shippo, atelier familial depuis 1883. Sous sa direction, vous commencez votre pièce : façonner le fin fil d'argent pour tracer le motif, puis le remplir d'émaux de verre colorés.","studio.jpg","enamel"],
+    ["12:00","Déjeuner en famille, puis retour à l'établi","Le déjeuner est la cuisine maison de la famille Tamura, par exemple des boulettes de riz et une soupe miso au porc et aux légumes. Vous poursuivez ensuite à l'établi, puis {T} se charge de la cuisson et des finitions."],
+    ["16:00","La brasserie Sato","Un court trajet vous mène à la brasserie Sato, fondée en 1874. Parmi de hauts fûts en bois, dont certains sont plus anciens que l'entreprise elle-même, découvrez la fabrication du miso et du tamari, et pourquoi la région en est réputée. La brasserie appelle <i>kuraguse</i> le caractère que donnent à ses produits les levures et bactéries qui vivent dans ses murs. À Ama no Kura, la boutique de la brasserie, vous pouvez acheter du miso frais et du tamari.","brewery.jpg","warm"],
+    ["17:30","Dîner dans une adresse locale","Dîner dans un restaurant japonais apprécié des habitants d'Ama. Avant la fin du repas, votre pendentif terminé est à vous. Comment il vous parvient ? Nous gardons la surprise."],
+    ["20:00","Retour à votre hôtel","Le véhicule vous ramène à votre hôtel, et la journée s'achève."]]},
+  take:{h:"Ce que vous emportez",intro:"Un pendentif en émail cloisonné réalisé de vos mains et terminé par l'artiste. Personne d'autre n'aura le même.",
+    gH:"Ce que vous réalisez",gP:"Un pendentif en émail cloisonné, avec sa chaîne offerte. Vous choisissez le motif et les couleurs avec {T} le jour même. Les photos sont des exemples.",g:["Pendentif","Un motif tracé au fil d'argent","Les couleurs de votre choix","Œuvres de l'atelier Tamura"],bH:"Du cuivre et de l'argent à la pièce finie",
+    ba:["Pose du fil d'argent","Émaux déposés","Cuit et poli"],
+    items:[["Avant la fin de la journée : votre pendentif","{T} cuit et finit votre pendentif l'après-midi ; il est à vous avant la fin du dîner. La façon dont il vous parvient est une petite surprise que nous préférons garder."],
+      ["Facile à transporter","Un pendentif tient dans votre bagage à main : aucun envoi international à organiser."],
+      ["La cuisson prend le temps qu'il faut","Chaque pièce est cuite et polie à la main ; l'ordre de l'après-midi peut donc légèrement changer. Votre guide vous tient informé. Dans le rare cas où elle ne serait pas prête à temps, nous vous l'envoyons par EMS à nos frais."]],
+    note:"Les œuvres de {T} ainsi que le miso et le tamari de la brasserie Sato peuvent être achetés sur place. Ces achats ne sont pas compris dans le prix."},
+  people:{h:"Ceux qui vous accueillent",intro:"Le cœur de cette journée est enseigné par l'artiste elle-même. La brasserie et le dîner sont tenus par des gens qui vivent de cette terre.",team:"L'atelier Tamura Shippo à Ama, où vous passez l'essentiel de la journée.",list:[
+    ["T","Artiste en cloisonné de cinquième génération, Tamura Shippo","Atelier familial depuis 1883","Elle a étudié l'architecture à l'Université d'art Musashino, à Tokyo, et s'est produite sur scène comme musicienne pendant près de dix ans dès ses années d'études. Après avoir travaillé dans le web design et la production de spectacles et d'événements, elle est revenue dans l'atelier familial en 2012 pour se former auprès de son père, la quatrième génération, et a lancé en 2015 sa propre marque de bijoux en émail cloisonné. Ses œuvres ont été sélectionnées deux fois au Concours national de l'artisanat traditionnel japonais (2021, 2022) et présentées lors d'une exposition personnelle au Matsuzakaya de Nagoya (2020), à Londres (2019) et dans une exposition itinérante passée par Kyoto, Tokyo, Nagoya et New York (2023). En 2023, elle a réalisé en émail cloisonné un visuel d'affiche pour <i>Élémentaire</i> de Disney et Pixar. Le jour de votre visite, elle travaille juste à côté de vous.","tamura.jpg"],
+    ["Brasserie Sato","Brasserie de miso et de tamari, Ama","Fondée en 1874","La brasserie Sato brasse à Shippo-cho depuis 1874, et certains de ses fûts en bois ont été fabriqués avant même sa fondation. Les levures et bactéries lactiques qui vivent dans ses murs donnent à son miso un caractère unique, et son miso de soja est élaboré pour être plus doux et moins âpre que la plupart. La brasserie ouvre ses portes pour montrer comment naissent le miso et le tamari.","sato.jpg"]]},
+  price:{h:"Tarif",amount:"143 000 ¥",per:"par personne, taxes comprises",
+    rows:[["Groupe","1 à 4 personnes, un seul groupe privé par jour"],["Durée","Environ 11 heures, de 9 h à 20 h, depuis et jusqu'à votre hôtel au centre de Nagoya"],["Paiement","Par PayPal dans les 3 jours suivant la confirmation"],["Langue","Visite guidée en anglais"]],
+    incH:"Compris",inc:["Séance privée d'émail cloisonné avec {T}, et votre pendentif terminé avec sa chaîne","Entrée au Shippo Art Village","Déjeuner fait maison avec la famille Tamura","Visite de la brasserie Sato","Dîner dans un restaurant japonais apprécié des habitants","Guide privé toute la journée","Véhicule privé depuis votre hôtel et entre toutes les étapes","Photos et courtes vidéos de votre journée, envoyées par WhatsApp"],
+    excH:"Non compris",exc:["Le voyage jusqu'à Nagoya et l'hébergement","Les achats, comme les œuvres de {T} ou les produits de la brasserie","Les autres dépenses personnelles"]},
+  worries:{h:"Vos inquiétudes, nos réponses",items:[
+    ["Budget","Cela vaut-il le prix ?","Toute la journée est privée et comprise : prise en charge à l'hôtel, véhicule et guide privés, atelier avec l'artiste elle-même, entrée au musée, déjeuner, brasserie et dîner. Votre pièce terminée repart avec vous le soir même."],
+    ["Temps","Cela vaut-il une journée entière de voyage ?","Ama est voisine de Nagoya : pas de long trajet en train. On vous prend à votre hôtel à 9 h et on vous y ramène vers 20 h, sans rien à organiser entre-temps."],
+    ["Confiance","Je ne suis pas artiste. Ma pièce sera-t-elle réussie ?","Aucune expérience n'est nécessaire. {T} vous guide pas à pas, et elle se charge elle-même de la cuisson et des finitions."],
+    ["Physique","Est-ce fatigant ?","L'essentiel de la journée se passe assis à l'atelier, avec de courtes marches à chaque étape. Le travail est fin et précis : si vous portez des lunettes de lecture, pensez à les apporter."]]},
+  steps:{h:"De la demande à votre pièce en main",items:[
+    ["Envoyez une demande","Environ une minute, et vous recevez aussitôt un e-mail de confirmation."],
+    ["Nous confirmons la disponibilité","Nous vérifions auprès de l'atelier, de la brasserie et du restaurant, et répondons sous 3 jours ouvrés."],
+    ["Paiement par PayPal","Une fois la date confirmée, nous envoyons un lien PayPal. Merci de payer sous 3 jours pour garantir votre date."],
+    ["E-mail avant le départ","Une semaine avant, nous envoyons les détails de la prise en charge et ce qu'il faut apporter."],
+    ["Votre journée à Ama","Le jour même, nous restons en contact par WhatsApp et vous envoyons vos photos et vidéos de la même façon."],
+    ["Votre pièce entre vos mains","Votre pendentif terminé est à vous avant la fin de la journée, prêt à voyager avec vous."]]},
+  know:{h:"À savoir avant de partir",items:[
+    "Prise en charge dans le hall de votre hôtel à 9 h, retour à l'hôtel vers 20 h. La prise en charge concerne les hôtels du centre de Nagoya (autour de la gare de Nagoya, Sakae, Fushimi ou Kanayama) ; indiquez-nous votre hôtel lors de la demande.",
+    "Pas de visite le lundi, ni pendant la Golden Week (fin avril à début mai), Obon (mi-août), la Silver Week (fin septembre, certaines années) ni les fêtes du Nouvel An (fin décembre à début janvier). D'autres dates peuvent aussi être indisponibles.",
+    "Les demandes sont closes 20 jours avant votre date, à 18 h (heure du Japon).",
+    "Un seul groupe privé par jour, jusqu'à 4 personnes. Si des enfants participent, indiquez-nous leur âge lors de la demande.",
+    "Le travail se fait avec un fin fil d'argent et de petits outils. Si vous portez des lunettes de lecture, apportez-les.",
+    "La cuisine japonaise utilise souvent du soja (miso, sauce soja). Nous adaptons les repas aux allergies et au régime végan si vous nous le signalez lors de la demande. Nous ne pouvons pas proposer de repas halal.",
+    "L'ordre de la journée peut légèrement varier selon l'avancement de votre pièce.",
+    "Notre bureau est fermé le week-end, les jours fériés japonais, pendant Obon et les fêtes du Nouvel An ; nos réponses peuvent alors prendre plus de temps."],
+    cxH:"Conditions d'annulation",cx:[["15 jours ou plus avant","Gratuit"],["7 à 14 jours avant","20 %"],["2 à 6 jours avant","50 %"],["La veille","50 %"],["Le jour même","100 %"]],cxNote:"Pourcentages du prix de la visite."},
+  bot:{"title":"Questions sur la visite","hello":"Bonjour ! Touchez une question ci-dessous et je vous réponds tout de suite.","extra":[["Combien cela coûte-t-il ?","143 000 ¥ par personne, taxes comprises, pour un groupe privé de 1 à 4 personnes. La prise en charge à l'hôtel, le guide et le véhicule privés, les entrées, le déjeuner, le dîner et votre pièce terminée sont compris."],["Quand la visite est-elle possible ?","Un groupe par jour, de 9 h à 20 h. Pas de visite le lundi, ni pendant les périodes de congés japonaises : la Golden Week (fin avril à début mai), Obon (mi-août), la Silver Week (fin septembre, certaines années) et les fêtes du Nouvel An (fin décembre à début janvier). Les demandes sont closes 20 jours avant votre date."]],"other":"J'ai une autre question","otherA":"Envoyez-la via le formulaire de demande en choisissant « Question uniquement ». Nous répondons par e-mail sous 3 jours ouvrés.","book":"Aller au formulaire","more":"Autre chose ?","open":"Ouvrir le chat des questions","close":"Fermer"},
+  faq:{h:"Questions",items:[
+    ["Faut-il de l'expérience ?","Non. {T} vous guide pas à pas, du façonnage du fil d'argent au choix des couleurs, et elle se charge elle-même de la cuisson et des finitions."],
+    ["Que vais-je réaliser ?","Un pendentif en émail cloisonné, avec un motif tracé au fil d'argent et rempli d'émaux aux couleurs de votre choix. La chaîne est offerte."],
+    ["Puis-je emporter ma pièce le jour même ?","Oui. {T} le cuit et le finit l'après-midi, et il est à vous avant la fin du dîner. La cuisson et le polissage prenant le temps nécessaire, l'ordre de la journée peut légèrement varier. Dans le rare cas où il ne serait pas prêt à temps, nous vous l'envoyons par EMS à nos frais."],
+    ["Puis-je acheter les œuvres de l'artiste ?","Oui, vous aurez le temps de voir et d'acheter des œuvres de {T} à l'atelier si vous le souhaitez. Les achats ne sont pas compris dans le prix."],
+    ["Où venez-vous nous chercher ?","Dans le hall de votre hôtel à 9 h, et vous y êtes ramenés vers 20 h. La prise en charge concerne les hôtels du centre de Nagoya (autour de la gare de Nagoya, Sakae, Fushimi ou Kanayama) ; indiquez-nous votre hôtel lors de la demande."],
+    ["En quelle langue se déroule la visite ?","La visite se fait uniquement en anglais. Un guide anglophone vous accompagne toute la journée et traduit les paroles de l'artiste."],
+    ["Pouvez-vous adapter les repas ?","Le déjeuner est la cuisine maison de la famille Tamura, par exemple des boulettes de riz et une soupe miso au porc et aux légumes, et le dîner est servi dans un restaurant japonais local. La cuisine japonaise utilise souvent du soja (miso, sauce soja). Nous adaptons les repas aux allergies et au régime végan si vous nous le signalez lors de la demande. Nous ne pouvons pas proposer de repas halal."],
+    ["Les enfants peuvent-ils participer ?","Indiquez-nous leur âge lors de la demande et nous vous confirmerons si l'activité leur convient. Le prix est par personne."],
+    ["Puis-je venir seul(e) ?","Oui. La visite a lieu dès une personne, au même prix par personne."],
+    ["Comment payer ?","Après confirmation de votre date, nous envoyons un lien de paiement PayPal. Merci de payer sous 3 jours pour garantir votre date."],
+    ["Quelles sont les conditions d'annulation ?","15 jours ou plus avant : gratuit. De 7 à 14 jours avant : 20 % du prix. De 2 à 6 jours avant : 50 %. La veille : 50 %. Le jour même : 100 %."],
+    ["Et s'il pleut ?","L'essentiel de la journée se passe à l'intérieur et vous vous déplacez en véhicule privé : la pluie change peu de chose."],
+    ["Comment m'habiller ?","Des vêtements confortables et des chaussures adaptées à la marche : il y a de courtes marches au temple et entre les étapes."],
+    ["Puis-je prendre des photos ?","Bien sûr. Merci de suivre les consignes de l'atelier ou de la brasserie. Nous vous envoyons aussi des photos et de courtes vidéos de votre journée par WhatsApp."],
+    ["Puis-je rapporter du miso ou du tamari ?","Les produits de la brasserie sont en vente sur place. Vérifiez avant l'achat les règles de votre pays concernant l'importation de denrées alimentaires."],
+    ["J'ai une autre question.","Utilisez le formulaire ci-dessous et choisissez « Question uniquement ». Nous vous répondons par e-mail."]]},
+  book:{h:"Demander votre date",p:"Un seul groupe privé par jour. Envoyez-nous la date souhaitée ; nous répondons sous 3 jours ouvrés.",micro:"Aucun paiement avant la confirmation de votre date.",alt:"Le formulaire ne s'affiche pas ? Ouvrez-le dans un nouvel onglet.",btn:"Ouvrir le formulaire de demande",after:"Simplement une question ? Utilisez le même formulaire et choisissez « Question uniquement »."},
+  foot:{saleH:"Vendu par",sale:"Act-U Travel Co., Ltd. (株式会社アクト・ユートラベル)<br>Agence de voyages enregistrée auprès du commissaire de l'Agence japonaise du tourisme, n° 1102<br>HP Otsu-dori Bldg. 2F, 3-5-28 Nishiki, Naka-ku, Nagoya, Aichi 460-0003, Japon<br>+81 52-951-4451",opH:"Conception et organisation",op:"Balt Kobo<br>3 Nakakiri-cho, Seto, Aichi 489-0042, Japon",privH:"Protection des données",
+    priv:"Les informations envoyées via le formulaire (noms, e-mail, téléphone, hôtel, dates, nombre de personnes, besoins alimentaires, etc.) servent uniquement à répondre à votre demande et à organiser votre visite. Nous ne les partageons qu'avec l'agence de voyages qui vend la visite ainsi que l'atelier, la brasserie, le restaurant et le transport concernés, et ne les vendons jamais. Pour les consulter ou les supprimer, écrivez-nous.",
+    ig:"Instagram"}
+},
+
+de:{
+  title:"Owari-Zellenschmelz und Fermentation: Ein privater Tag in Ama mit einer Künstlerin in fünfter Generation",
+  nav:[["#story","Geschichte"],["#day","Der Tag"],["#artisans","Die Künstlerin"],["#price","Preis"],["#faq","FAQ"]],
+  ctaShort:"Termin anfragen", ctaMain:"Wunschtermin anfragen",
+  hero:{kicker:"Ein privater Tag mit Zellenschmelz und Fermentation, direkt neben Nagoya",
+    h1:"Mit Silber zeichnen.<br>Mit Farbe füllen.",
+    lead:"In Ama, der Heimat des Owari-Zellenschmelzes (Shippo), öffnet {T}, die fünfte Generation einer 1883 gegründeten Familienwerkstatt, ihr Atelier für nur eine Gruppe pro Tag. Legen Sie an ihrer Seite feinen Silberdraht und Glasemaille, essen Sie hausgemacht mit ihrer Familie zu Mittag, betreten Sie eine Brauerei, die seit 1874 Miso und Tamari herstellt, und nehmen Sie Ihr fertiges Stück noch am selben Abend mit.",
+    facts:["143.000 ¥ pro Person","Eine private Gruppe pro Tag, 1–4 Gäste","Rund 11 Stunden, Abholung im Zentrum von Nagoya","Ihr eigener Zellenschmelz-Anhänger, noch am selben Tag Ihrer"],
+    micro:"Dauert etwa eine Minute. Bezahlt wird erst, wenn wir Ihren Termin bestätigen.",
+    cap:["{T} an ihrer Werkbank","Tempel Jimokuji Kannon","Brauerei Sato","Beispiel für einen Anhänger"]},
+  emp:{h:"Die meisten Handwerkskurse sind eine Stunde an einem vollen Tisch. Den Menschen, der das Handwerk am Leben hält, lernt man selten kennen.",
+    p:["Man folgt einer Vorlage, jemand anderes stellt das Stück später fertig, und man geht, ohne zu wissen, warum es dieses Handwerk gibt oder wer es am Leben hält.",
+       "Dieser Tag ist das Gegenteil. Ihre Gruppe ist die einzige. Zuerst lernen Sie die Geschichte kennen, dann arbeiten Sie neben der Künstlerin in ihrem eigenen Atelier, sitzen am Tisch ihrer Familie und beenden den Tag dort, wo Miso und Sojasauce dieser Region seit Generationen gebraut werden."]},
+  story:{h:"Das Dorf, das sich den Zellenschmelz selbst beibrachte",
+    p:["Der Tag beginnt am Jimokuji Kannon, einem Tempel, der der Überlieferung nach rund 1.400 Jahre alt ist und zu den vier großen Kannon-Tempeln der Region Owari zählt. Ringsum prägen Reisfelder und alte Schreine noch heute die Landschaft direkt vor Nagoya.",
+       "In den 1830er-Jahren untersuchte Kaji Tsunekichi, ein Samurai des Owari-Lehens, ein Stück niederländischen Zellenschmelz und fand selbst heraus, wie es hergestellt wurde. Die Technik verbreitete sich unter den Bauernfamilien im heutigen Shippo-cho in Ama. Owari-Zellenschmelz wurde auf der Pariser Weltausstellung 1867 gezeigt und in Europa bewundert.",
+       "Es war immer die Arbeit eines ganzen Dorfes. Silberdraht legen, Emaille einfüllen, immer wieder brennen, polieren: Für jeden Schritt gab es eigene Spezialisten, und traditionell signierten die Handwerker ihre Arbeiten nicht.",
+       "Daneben wuchs eine zweite Tradition. Das warme, feuchte Klima begünstigt den Koji-Pilz, und die Region ist für Tamari-Sojasauce und Sojabohnen-Miso bekannt. Die Brauerei Sato braut beides seit 1874 in Ama, in Holzfässern.",
+       "Heute gibt es in der Stadt nur noch etwa zehn Shippo-Betriebe. Die Menschen hinter diesem Tag öffnen ihre Türen, damit Gäste aus aller Welt dieses Handwerk sehen, solange es noch von Hand ausgeübt wird, und damit es eine Zukunft hat."],
+    land:"Jimokuji Kannon, wo der Tag beginnt.",works:"Das Shippo Art Village in Ama: Erst die Geschichte, dann das eigene Stück.",chain:["Ein 1.400 Jahre alter Tempel","Owari-Shippo","Miso und Tamari","Ihr Tisch"]},
+  video:"Zellenschmelz bei Tamura Shippo im Video",
+  expect:{h:"Was Sie erleben",items:[
+    ["Beginn in einem alten Tempel","Ihr Guide stellt Ihnen den Jimokuji Kannon und die Geschichte der Gegend vor."],
+    ["Erst verstehen, dann gestalten","Im Shippo Art Village sehen Sie, wie Owari-Zellenschmelz entsteht und welche Stücke ihn berühmt machten."],
+    ["Ein privates Atelier mit {T}","Die Künstlerin in fünfter Generation leitet Sie beim Legen des Silberdrahts und beim Einfüllen der Emaillefarben an."],
+    ["Mittagessen am Familientisch","Hausmannskost mit der Familie Tamura, danach zurück an die Werkbank."],
+    ["In einer Brauerei","Holzfässer, der Duft der Fermentation und wie Miso und Tamari in der Brauerei Sato entstehen."],
+    ["Abendessen in einem Lieblingslokal der Einheimischen","Abendessen in einem japanischen Restaurant, das bei den Einheimischen beliebt ist."],
+    ["Ihr Stück, vollendet","{T} brennt und vollendet Ihren Anhänger, und er gehört Ihnen, bevor der Tag endet. Wie er zu Ihnen kommt, bleibt eine kleine Überraschung."]]},
+  why:{h:"Warum dieser Tag",items:[
+    ["Von der Künstlerin selbst","{T}, fünfte Generation von Tamura Shippo (gegründet 1883), leitet Sie persönlich an."],
+    ["Eine Gruppe pro Tag","Höchstens vier Gäste. Atelier, Mahlzeiten und Fahrzeug gehören nur Ihnen."],
+    ["Die Geschichte hinter dem Handwerk","Zuerst das Museum, damit jeder Schritt an der Werkbank Sinn ergibt."],
+    ["Zwei Traditionen an einem Tag","Feuer und Glas am Vormittag, Zeit und Fermentation am Nachmittag."],
+    ["Von Tür zu Tür","Abholung an Ihrem Hotel im Zentrum von Nagoya und den ganzen Tag ein privates Fahrzeug."],
+    ["Noch am selben Tag mitnehmen","Kein monatelanges Warten auf den Versand: Ihr Stück reist mit Ihnen."],
+    ["Fotos für Sie","Fotos und kurze Videos Ihres Tages schicken wir Ihnen per WhatsApp."]]},
+  day:{h:"Ihr Tag, Stunde für Stunde",intro:"Alles ist privat für Ihre Gruppe. Ein privates Fahrzeug bringt Sie vom Hotel zu jeder Station, und ein englischsprachiger Guide begleitet Sie den ganzen Tag. Je nachdem, wie weit Ihr Stück ist, können sich die Zeiten etwas verschieben.",stops:[
+    ["09:00","Abholung an Ihrem Hotel","Ihr Guide erwartet Sie in der Hotellobby, dann fährt das private Fahrzeug nach Ama."],
+    ["09:30","Jimokuji Kannon","Ein Tempel, der der Überlieferung nach rund 1.400 Jahre alt ist, einer der vier großen Kannon-Tempel von Owari. Ihr Guide erzählt die Geschichte der Gegend, die Sie gleich erkunden.","jimokuji.jpg","dawn"],
+    ["10:00","Das Shippo Art Village","Im Shippo Art Village von Ama lernen Sie die Geschichte des Owari-Zellenschmelzes kennen, sehen jeden Arbeitsschritt und betrachten die Werke, die das Handwerk berühmt machten.","art-village.jpg","enamel"],
+    ["11:00","Im Atelier Tamura","{T} empfängt Sie bei Tamura Shippo, einer Familienwerkstatt seit 1883. Unter ihrer Anleitung beginnen Sie Ihr Stück: Sie formen feinen Silberdraht zum Motiv und füllen es mit farbiger Glasemaille.","studio.jpg","enamel"],
+    ["12:00","Mittagessen mit der Familie, dann weiter","Zum Mittagessen gibt es die Hausmannskost der Familie Tamura, etwa Reisbällchen und Misosuppe mit Schweinefleisch und Gemüse. Danach arbeiten Sie weiter, und {T} übernimmt Brand und Feinschliff."],
+    ["16:00","Brauerei Sato","Eine kurze Fahrt bringt Sie zur Brauerei Sato, gegründet 1874. Zwischen hohen Holzfässern, von denen manche älter sind als das Unternehmen selbst, erfahren Sie, wie Miso und Tamari-Sojasauce hergestellt werden und warum die Region dafür bekannt ist. Den eigenen Charakter, den die im Brauhaus lebenden Hefen und Bakterien den Produkten geben, nennt die Brauerei <i>Kuraguse</i>. In Ama no Kura, dem Laden der Brauerei, können Sie frisches Miso und Tamari kaufen.","brewery.jpg","warm"],
+    ["17:30","Abendessen in einem Lieblingslokal der Einheimischen","Abendessen in einem japanischen Restaurant, das bei den Menschen in Ama beliebt ist. Bis zum Ende des Essens gehört Ihr fertiger Anhänger Ihnen. Wie er zu Ihnen kommt, verraten wir noch nicht."],
+    ["20:00","Zurück im Hotel","Das Fahrzeug bringt Sie zurück zu Ihrem Hotel, und der Tag geht zu Ende."]]},
+  take:{h:"Was Sie mitnehmen",intro:"Ein Zellenschmelz-Anhänger, mit eigenen Händen gemacht und von der Künstlerin vollendet. Niemand sonst wird denselben haben.",
+    gH:"Was Sie gestalten",gP:"Ein Anhänger in Zellenschmelz, eine Kette ist kostenlos dabei. Motiv und Farben wählen Sie am Tag selbst mit {T}. Die Fotos zeigen Beispiele.",g:["Anhänger","Ein Motiv aus Silberdraht","Farben nach Wahl","Arbeiten aus dem Atelier Tamura"],bH:"Von Kupfer und Silber zum fertigen Stück",
+    ba:["Silberdraht legen","Emaillefarben eingefüllt","Gebrannt und poliert"],
+    items:[["Bevor der Tag endet: Ihr Anhänger","{T} brennt und vollendet Ihren Anhänger am Nachmittag; bis zum Ende des Abendessens gehört er Ihnen. Wie genau er zu Ihnen kommt, ist eine kleine Überraschung, die wir nicht verraten möchten."],
+      ["Leicht zu transportieren","Ein Anhänger passt ins Handgepäck, ein internationaler Versand ist nicht nötig."],
+      ["Brennen braucht seine Zeit","Jedes Stück wird von Hand gebrannt und poliert, daher kann sich die Reihenfolge am Nachmittag leicht ändern. Ihr Guide hält Sie auf dem Laufenden. Sollte er ausnahmsweise nicht rechtzeitig fertig werden, schicken wir ihn Ihnen auf unsere Kosten per EMS."]],
+    note:"Arbeiten von {T} sowie Miso und Tamari der Brauerei Sato können Sie vor Ort kaufen. Diese Einkäufe sind nicht im Preis enthalten."},
+  people:{h:"Die Menschen, die Sie empfangen",intro:"Das Handwerk im Mittelpunkt dieses Tages lehrt die Künstlerin selbst. Brauerei und Abendessen liegen in den Händen von Menschen, die von diesem Land leben.",team:"Das Atelier Tamura Shippo in Ama, wo Sie den größten Teil des Tages verbringen.",list:[
+    ["T","Shippo-Künstlerin in fünfter Generation, Tamura Shippo","Familienwerkstatt seit 1883","Sie studierte Architektur an der Musashino-Kunsthochschule in Tokio und stand schon im Studium fast zehn Jahre lang als Musikerin auf der Bühne. Nach Stationen im Webdesign sowie in der Bühnen- und Eventproduktion kehrte sie 2012 in die Familienwerkstatt zurück, um bei ihrem Vater, der vierten Generation, zu lernen, und gründete 2015 ihre eigene Schmuckmarke in Zellenschmelz. Ihre Arbeiten wurden zweimal für Japans landesweiten Wettbewerb für traditionelles Handwerk ausgewählt (2021, 2022) und in einer Einzelausstellung im Matsuzakaya Nagoya (2020), in London (2019) sowie in einer Wanderausstellung in Kyoto, Tokio, Nagoya und New York (2023) gezeigt. 2023 gestaltete sie in Zellenschmelz ein Plakatmotiv für Disneys und Pixars <i>Elemental</i>. Am Tag Ihres Besuchs arbeitet sie direkt neben Ihnen.","tamura.jpg"],
+    ["Brauerei Sato","Miso- und Tamari-Brauerei, Ama","Gegründet 1874","Die Brauerei Sato braut seit 1874 in Shippo-cho, und einige ihrer Holzfässer sind älter als das Unternehmen selbst. Die im Brauhaus lebenden Hefen und Milchsäurebakterien geben ihrem Miso einen eigenen Charakter; ihr Sojabohnen-Miso wird bewusst milder und weniger herb hergestellt als die meisten. Die Brauerei öffnet ihre Türen, um zu zeigen, wie Miso und Tamari entstehen.","sato.jpg"]]},
+  price:{h:"Preis",amount:"143.000 ¥",per:"pro Person, inkl. Steuern",
+    rows:[["Gruppe","1–4 Gäste, eine private Gruppe pro Tag"],["Dauer","Rund 11 Stunden, 9:00–20:00 Uhr, ab und bis Hotel im Zentrum von Nagoya"],["Zahlung","Per PayPal innerhalb von 3 Tagen nach Bestätigung"],["Sprache","Führung auf Englisch"]],
+    incH:"Inklusive",inc:["Private Zellenschmelz-Session mit {T} und Ihr fertiger Anhänger mit Kette","Eintritt ins Shippo Art Village","Hausgemachtes Mittagessen mit der Familie Tamura","Besuch der Brauerei Sato","Abendessen in einem bei Einheimischen beliebten japanischen Restaurant","Privater Guide für den ganzen Tag","Privates Fahrzeug ab Hotel und zwischen allen Stationen","Fotos und kurze Videos Ihres Tages per WhatsApp"],
+    excH:"Nicht inklusive",exc:["Anreise nach Nagoya und Unterkunft","Einkäufe wie Arbeiten von {T} oder Produkte der Brauerei","Sonstige persönliche Ausgaben"]},
+  worries:{h:"Häufige Bedenken, beantwortet",items:[
+    ["Geld","Ist es den Preis wert?","Der ganze Tag ist privat und inklusive: Abholung am Hotel, privates Fahrzeug und Guide, Zeit im Atelier mit der Künstlerin selbst, Museumseintritt, Mittagessen, Brauerei und Abendessen. Ihr fertiges Stück nehmen Sie noch am selben Abend mit."],
+    ["Zeit","Ist es einen ganzen Reisetag wert?","Ama liegt direkt neben Nagoya, lange Bahnfahrten entfallen. Wir holen Sie um 9:00 Uhr am Hotel ab und bringen Sie gegen 20:00 Uhr zurück, dazwischen müssen Sie nichts planen."],
+    ["Zutrauen","Ich bin nicht künstlerisch begabt. Wird mein Stück gelingen?","Erfahrung ist nicht nötig. {T} begleitet Sie Schritt für Schritt, und Brand und Feinschliff übernimmt sie selbst."],
+    ["Körper","Ist es körperlich anstrengend?","Den größten Teil des Tages arbeiten Sie im Sitzen im Atelier, an jeder Station gibt es nur kurze Wege. Die Arbeit ist fein und detailliert; wenn Sie eine Lesebrille tragen, bringen Sie sie bitte mit."]]},
+  steps:{h:"Von der Anfrage bis zum Stück in Ihren Händen",items:[
+    ["Anfrage senden","Dauert etwa eine Minute, und Sie erhalten sofort eine Bestätigungs-E-Mail."],
+    ["Wir prüfen die Verfügbarkeit","Wir stimmen uns mit Atelier, Brauerei und Restaurant ab und antworten innerhalb von 3 Werktagen."],
+    ["Zahlung per PayPal","Nach der Bestätigung senden wir einen PayPal-Zahlungslink. Bitte zahlen Sie innerhalb von 3 Tagen, um Ihren Termin zu sichern."],
+    ["E-Mail vor der Reise","Eine Woche vorher senden wir die Details zur Abholung und was Sie mitbringen sollten."],
+    ["Ihr Tag in Ama","Am Tag selbst bleiben wir per WhatsApp in Kontakt und schicken Ihnen auf demselben Weg Ihre Fotos und Videos."],
+    ["Ihr Stück in Ihren Händen","Ihr fertiger Anhänger gehört Ihnen, bevor der Tag endet, bereit für die Heimreise."]]},
+  know:{h:"Gut zu wissen",items:[
+    "Abholung in Ihrer Hotellobby um 9:00 Uhr, zurück am Hotel gegen 20:00 Uhr. Die Abholung gilt für Hotels im Zentrum von Nagoya (rund um den Bahnhof Nagoya, Sakae, Fushimi oder Kanayama); bitte nennen Sie uns Ihr Hotel bei der Anfrage.",
+    "Nicht verfügbar montags sowie während der Golden Week (Ende April bis Anfang Mai), Obon (Mitte August), der Silver Week (Ende September, in manchen Jahren) und der Neujahrsfeiertage (Ende Dezember bis Anfang Januar). Auch einige andere Termine können nicht verfügbar sein.",
+    "Anfragen sind bis 20 Tage vor Ihrem Termin, 18:00 Uhr japanischer Zeit, möglich.",
+    "Eine private Gruppe pro Tag, bis zu 4 Gäste. Wenn Kinder dabei sind, nennen Sie uns bitte bei der Anfrage ihr Alter.",
+    "Gearbeitet wird mit feinem Silberdraht und kleinen Werkzeugen. Wenn Sie eine Lesebrille tragen, bringen Sie sie bitte mit.",
+    "Die japanische Küche verwendet häufig Soja (in Miso und Sojasauce). Bei Allergien und veganer Ernährung passen wir die Mahlzeiten an, wenn Sie es uns bei der Anfrage mitteilen. Halal-Mahlzeiten können wir leider nicht anbieten.",
+    "Je nachdem, wie weit Ihr Stück ist, kann sich die Reihenfolge des Tages leicht verschieben.",
+    "Unser Büro ist an Wochenenden, japanischen Feiertagen, zu Obon und über Neujahr geschlossen; Antworten können dann länger dauern."],
+    cxH:"Stornobedingungen",cx:[["15 oder mehr Tage vorher","Kostenlos"],["7–14 Tage vorher","20 %"],["2–6 Tage vorher","50 %"],["Am Vortag","50 %"],["Am Tag selbst","100 %"]],cxNote:"Prozentsätze bezogen auf den Tourpreis."},
+  bot:{"title":"Fragen zur Tour","hello":"Hallo! Tippen Sie unten auf eine Frage, und ich antworte sofort.","extra":[["Was kostet die Tour?","143.000 ¥ pro Person inkl. Steuern, für eine private Gruppe von 1–4 Gästen. Abholung am Hotel, privater Guide und Fahrzeug, Eintritt, Mittag- und Abendessen sowie Ihr fertiges Stück sind inklusive."],["Wann ist die Tour möglich?","Eine Gruppe pro Tag, 9:00–20:00 Uhr. Nicht verfügbar montags sowie während der japanischen Ferienzeiten: Golden Week (Ende April bis Anfang Mai), Obon (Mitte August), Silver Week (Ende September, in manchen Jahren) und Neujahr (Ende Dezember bis Anfang Januar). Anfragen bis 20 Tage vor Ihrem Termin."]],"other":"Ich habe eine andere Frage","otherA":"Senden Sie sie bitte über das Anfrageformular und wählen Sie „Nur eine Frage“. Wir antworten innerhalb von 3 Werktagen per E-Mail.","book":"Zum Anfrageformular","more":"Noch etwas?","open":"Fragen-Chat öffnen","close":"Schließen"},
+  faq:{h:"Fragen",items:[
+    ["Brauche ich Vorkenntnisse?","Nein. {T} begleitet Sie Schritt für Schritt, vom Formen des Silberdrahts bis zur Farbwahl, und übernimmt Brand und Feinschliff selbst."],
+    ["Was gestalte ich?","Einen Anhänger in Zellenschmelz, mit einem Motiv aus Silberdraht und Emaille in Farben Ihrer Wahl. Eine Kette ist kostenlos dabei."],
+    ["Kann ich mein Stück am selben Tag mitnehmen?","Ja. {T} brennt und vollendet ihn am Nachmittag, und bis zum Ende des Abendessens gehört er Ihnen. Da Brennen und Polieren ihre Zeit brauchen, kann sich die Reihenfolge des Tages leicht verschieben. Sollte er ausnahmsweise nicht rechtzeitig fertig werden, schicken wir ihn Ihnen auf unsere Kosten per EMS."],
+    ["Kann ich Arbeiten der Künstlerin kaufen?","Ja, im Atelier haben Sie Zeit, Arbeiten von {T} anzusehen und auf Wunsch zu kaufen. Einkäufe sind nicht im Preis enthalten."],
+    ["Wo werden wir abgeholt?","Um 9:00 Uhr in der Lobby Ihres Hotels, und gegen 20:00 Uhr bringen wir Sie dorthin zurück. Die Abholung gilt für Hotels im Zentrum von Nagoya (rund um den Bahnhof Nagoya, Sakae, Fushimi oder Kanayama); bitte nennen Sie uns Ihr Hotel bei der Anfrage."],
+    ["In welcher Sprache ist die Tour?","Die Tour wird ausschließlich auf Englisch geführt. Ein englischsprachiger Guide begleitet Sie den ganzen Tag und übersetzt die Worte der Künstlerin."],
+    ["Können Sie auf Ernährungswünsche eingehen?","Mittags gibt es die Hausmannskost der Familie Tamura, etwa Reisbällchen und Misosuppe mit Schweinefleisch und Gemüse, abends japanische Küche in einem örtlichen Restaurant. Die japanische Küche verwendet häufig Soja (in Miso und Sojasauce). Bei Allergien und veganer Ernährung passen wir die Mahlzeiten an, wenn Sie es uns bei der Anfrage mitteilen. Halal-Mahlzeiten können wir leider nicht anbieten."],
+    ["Können Kinder teilnehmen?","Nennen Sie uns bei der Anfrage bitte ihr Alter, dann bestätigen wir, ob die Arbeit für sie geeignet ist. Der Preis gilt pro Person."],
+    ["Kann ich allein teilnehmen?","Ja. Die Tour findet ab einer Person statt, zum gleichen Preis pro Person."],
+    ["Wie bezahle ich?","Nach Bestätigung Ihres Termins senden wir einen PayPal-Zahlungslink. Bitte zahlen Sie innerhalb von 3 Tagen, um den Termin zu sichern."],
+    ["Wie sind die Stornobedingungen?","15 oder mehr Tage vorher: kostenlos. 7–14 Tage vorher: 20 % des Tourpreises. 2–6 Tage vorher: 50 %. Am Vortag: 50 %. Am Tag selbst: 100 %."],
+    ["Was ist, wenn es regnet?","Den größten Teil des Tages sind Sie drinnen und fahren im privaten Fahrzeug, Regen spielt daher kaum eine Rolle."],
+    ["Was soll ich anziehen?","Bequeme Kleidung und gute Schuhe: Am Tempel und zwischen den Stationen gehen Sie kurze Strecken zu Fuß."],
+    ["Darf ich fotografieren?","Natürlich. Bitte beachten Sie Hinweise des Ateliers oder der Brauerei zum Fotografieren. Wir schicken Ihnen außerdem Fotos und kurze Videos Ihres Tages per WhatsApp."],
+    ["Kann ich Miso oder Tamari mit nach Hause nehmen?","Produkte der Brauerei können vor Ort gekauft werden. Prüfen Sie bitte vor dem Kauf die Einfuhrbestimmungen Ihres Landes für Lebensmittel."],
+    ["Ich habe eine andere Frage.","Nutzen Sie bitte das Formular unten und wählen Sie „Nur eine Frage“. Wir antworten per E-Mail."]]},
+  book:{h:"Wunschtermin anfragen",p:"Eine private Gruppe pro Tag. Senden Sie uns Ihren Wunschtermin; wir antworten innerhalb von 3 Werktagen.",micro:"Bezahlt wird erst, wenn wir Ihren Termin bestätigen.",alt:"Formular wird nicht richtig angezeigt? In einem neuen Tab öffnen.",btn:"Anfrageformular öffnen",after:"Nur eine Frage? Nutzen Sie dasselbe Formular und wählen Sie „Nur eine Frage“."},
+  foot:{saleH:"Verkauf durch",sale:"Act-U Travel Co., Ltd. (株式会社アクト・ユートラベル)<br>Registriertes Reiseunternehmen, Kommissar der japanischen Tourismusbehörde, Nr. 1102<br>HP Otsu-dori Bldg. 2F, 3-5-28 Nishiki, Naka-ku, Nagoya, Aichi 460-0003, Japan<br>+81 52-951-4451",opH:"Planung und Durchführung",op:"Balt Kobo<br>3 Nakakiri-cho, Seto, Aichi 489-0042, Japan",privH:"Datenschutzhinweis",
+    priv:"Die Angaben aus dem Anfrageformular (z. B. Namen, E-Mail, Telefonnummer, Hotel, Termine, Personenzahl und Ernährungswünsche) verwenden wir nur, um Ihre Anfrage zu beantworten und Ihre Tour durchzuführen. Wir geben sie nur an das verkaufende Reiseunternehmen sowie an das Atelier, die Brauerei, das Restaurant und den Fahrdienst Ihres Tages weiter und verkaufen sie nie. Für Auskunft oder Löschung schreiben Sie uns eine E-Mail.",
+    ig:"Instagram"}
+},
+
+zh:{
+  title:"尾張七寶燒與發酵之旅：與第五代七寶作家共度的海部市包場一日遊",
+  nav:[["#story","故事"],["#day","一日行程"],["#artisans","作家介紹"],["#price","費用"],["#faq","常見問題"]],
+  ctaShort:"申請日期", ctaMain:"申請您的日期",
+  hero:{kicker:"就在名古屋旁，七寶燒與發酵文化的包場一日遊",
+    h1:"以銀線描繪，<br>以色彩填滿。",
+    lead:"在尾張七寶燒的發源地海部市（あま市），創立於1883年的家族工房第五代傳人{T}，每天只為一組客人開放工作室。在作家身旁植上銀線、填入玻璃釉料，與她的家人共享家常午餐，走進自1874年起釀造味噌與溜醬油的釀造藏，並在當天帶走您完成的作品。",
+    facts:["每人 143,000日圓","每天僅限一組包場，1至4人","約11小時，名古屋市區飯店接送","親手製作的七寶墜飾，當天就能帶走"],
+    micro:"填寫約需1分鐘。日期確定前無需付款。",
+    cap:["工作檯前的{T}","甚目寺觀音","佐藤釀造","墜飾範例"]},
+  emp:{h:"大多數的工藝體驗，只是在擁擠桌前度過的一小時。守護這門技藝的作家本人，幾乎見不到。",
+    p:["照著範本動手，作品之後由別人完成，離開時仍不知道這門工藝為何而生、又是誰在守護它。",
+       "這一天恰恰相反。參加的只有您這一組。先了解歷史，再到作家本人的工作室與她並肩製作，圍坐在她家人的餐桌旁，最後在世代釀造當地味噌與醬油的地方結束這一天。"]},
+  story:{h:"自行解開七寶之謎的村落",
+    p:["這一天從甚目寺觀音開始。相傳創建至今約1,400年，是尾張四觀音之一。周圍仍保留著稻田與古老神社，難以想像這裡就緊鄰名古屋。",
+       "1830年代，尾張藩士梶常吉研究了一件來自荷蘭的七寶器物，獨力解開了它的製法。這項技術在今日海部市七寶町的農家之間傳開，尾張七寶並於1867年巴黎萬國博覽會展出，在歐洲廣受讚賞。",
+       "七寶燒一直是整個村落共同完成的工藝。植銀線、上釉、反覆燒製、研磨，每道工序都有專門的工匠，而依照傳統，製作者不在作品上署名。",
+       "在它身旁，還孕育出另一項傳統。溫暖潮濕的氣候適合麴菌生長，這個地區以溜醬油與豆味噌聞名。佐藤釀造自1874年起，在海部市以木桶釀造味噌與溜醬油。",
+       "如今市內從事七寶燒的業者只剩約10家。協助這一天的人們敞開大門，是希望在手工技藝仍然存在的時候，讓海外的旅人親眼看見，並為它延續未來。"],
+    land:"一天的起點：甚目寺觀音。",works:"海部市七寶燒藝術村：動手之前，先認識歷史。",chain:["1,400年古剎","尾張七寶","味噌與溜醬油","您的餐桌"]},
+  video:"影片看田村七寶工藝",
+  expect:{h:"這一天您將體驗",items:[
+    ["從古剎開始","導遊為您介紹甚目寺觀音與這片土地的故事。"],
+    ["先認識，再動手","在七寶燒藝術村了解尾張七寶的製作方式，以及讓它聞名於世的作品。"],
+    ["與{T}包場工作室","第五代作家指導您植上銀線、填入釉料色彩。"],
+    ["在田村家餐桌用午餐","與田村家一起享用家常料理，飯後回到工作檯。"],
+    ["走進釀造藏","木桶、發酵的香氣，以及佐藤釀造如何製作味噌與溜醬油。"],
+    ["在地人喜愛的餐廳晚餐","在深受當地人喜愛的日本料理店享用晚餐。"],
+    ["完成的作品","{T}為您的墜飾燒製與收尾，在一天結束前交給您。作品如何送到您手中，就留作當天的小驚喜。"]]},
+  why:{h:"選擇這一天的理由",items:[
+    ["作家本人親自指導","創立於1883年的田村七寶工藝第五代，{T}親自帶領您。"],
+    ["每天僅限一組","最多4人。工作室時光、餐點與車輛都只屬於您。"],
+    ["工藝背後的故事","先在資料館學習歷史，工作檯上的每一步都更有意義。"],
+    ["一天兩種傳統","上午是火與玻璃，下午是時間與發酵。"],
+    ["從飯店到飯店","在名古屋市區的飯店接您，全天專車移動。"],
+    ["當天就能帶走","不必等待數月的寄送，作品與您一起踏上旅途。"],
+    ["照片送給您","當天的照片與短片會透過WhatsApp傳送給您。"]]},
+  day:{h:"一日行程",intro:"全程僅您一組包場。專車從飯店出發並往返各站，英語導遊全天陪同。視作品完成狀況，時間可能稍有調整。",stops:[
+    ["09:00","飯店接送","導遊在飯店大廳等候您，專車出發前往海部市。"],
+    ["09:30","甚目寺觀音","相傳創建約1,400年，是尾張四觀音之一。導遊為您講述即將探訪的這片土地的故事。","jimokuji.jpg","dawn"],
+    ["10:00","七寶燒藝術村","在海部市七寶燒藝術村認識尾張七寶的歷史與各道工序，近距離欣賞讓它聞名的作品。","art-village.jpg","enamel"],
+    ["11:00","走進田村工作室","{T}在創立於1883年的家族工房田村七寶工藝迎接您。在她的指導下開始製作：用細銀線勾勒圖案，再填入彩色玻璃釉料。","studio.jpg","enamel"],
+    ["12:00","田村家的餐桌，接著繼續製作","午餐是田村家平日的家常料理，例如飯糰與豬肉味噌湯。飯後回到工作檯，之後由{T}進行燒製與收尾。"],
+    ["16:00","佐藤釀造","專車前往創立於1874年的佐藤釀造。在高大的木桶之間（其中有些甚至比公司創立還早），了解味噌與溜醬油的製法，以及這個地區為何以此聞名。釀造藏中棲息的酵母與乳酸菌所帶來的獨特風味，被稱為「藏癖（蔵ぐせ）」。在直營店「あまの蔵」可購買新鮮的味噌與溜醬油。","brewery.jpg","warm"],
+    ["17:30","在地人喜愛的餐廳晚餐","在深受海部市居民喜愛的日本料理店享用晚餐。用餐結束前，完成的墜飾就屬於您。至於它如何來到您手中，就留作驚喜。"],
+    ["20:00","返回飯店","專車送您回到飯店，一天就此結束。"]]},
+  take:{h:"帶回家的紀念",intro:"一件由您親手製作、作家完成收尾的七寶墜飾。世上不會有第二件。",
+    gH:"製作內容",gP:"七寶墜飾，並免費附上項鍊鏈子。圖案與顏色當天與{T}一起決定。照片為範例。",g:["墜飾","以銀線勾勒的圖案","自選的釉料顏色","田村七寶工藝的作品"],bH:"從銅與銀，到完成品",
+    ba:["植上銀線","填入釉料","燒製、研磨完成"],
+    items:[["一天結束前：您的墜飾","{T}在下午進行燒製與收尾，晚餐結束前交給您。作品如何送到您手中，是我們想保留的小驚喜。"],
+      ["方便攜帶","小巧的墜飾可放入隨身行李，不需安排國際寄送。"],
+      ["燒製需要應有的時間","每件作品都以手工燒製與研磨，下午的順序可能稍有變動，導遊會隨時告知。萬一當天未能完成，我們將以EMS寄送給您，運費由我們負擔。"]],
+    note:"{T}的作品，以及佐藤釀造的味噌與溜醬油，當天可自費購買，不含在費用中。"},
+  people:{h:"迎接您的人們",intro:"這一天的核心工藝由作家本人親自傳授。釀造藏與晚餐，則由在這片土地上生活的人們負責。",team:"位於海部市的田村七寶工藝工作室，您將在這裡度過一天的大部分時間。",list:[
+    ["T","田村七寶工藝 第五代・七寶作家","創立於1883年的家族工房","於武藏野美術大學主修建築，學生時代起約10年間也以音樂活動站上舞台。畢業後曾從事網頁設計、舞台與活動製作等工作，2012年回到家業，師事身為第四代的父親。2015年創立個人七寶珠寶品牌。作品曾入選全國傳統工藝品公募展（2021年、2022年），並於松坂屋名古屋店舉辦個展（2020年），亦曾在倫敦展出（2019年），以及參加巡迴京都、東京、名古屋與紐約的展覽（2023年）。2023年以七寶製作迪士尼與皮克斯電影《元素方城市》的海報視覺。當天，她會在您的工作檯旁親自引導。","tamura.jpg"],
+    ["佐藤釀造","海部市的味噌與溜醬油釀造藏","創立於1874年","自1874年起在七寶町釀造，部分木桶的歷史甚至早於創業。棲息在釀造藏中的酵母與乳酸菌賦予味噌獨特風味，其豆味噌以澀味少、口感圓潤為特色。釀造藏敞開大門，為您介紹味噌與溜醬油的製程。","sato.jpg"]]},
+  price:{h:"費用",amount:"143,000日圓",per:"每人（含稅）",
+    rows:[["人數","1至4人，每天僅限一組包場"],["時間","約11小時（9:00至20:00），含名古屋市區飯店接送"],["付款","確認預約後3天內以PayPal付款"],["語言","英語導覽"]],
+    incH:"費用包含",inc:["由{T}親自指導的七寶製作，以及完成的墜飾（附鏈子）","七寶燒藝術村門票","與田村家共享的家常午餐","參觀佐藤釀造","在深受當地人喜愛的日本料理店享用晚餐","全天專屬導遊","飯店接送與全程專車","當天的照片與短片（透過WhatsApp傳送）"],
+    excH:"費用不含",exc:["前往名古屋的交通費與住宿費","購買{T}的作品或釀造藏商品等費用","其他個人花費"]},
+  worries:{h:"常見的顧慮",items:[
+    ["費用","這個價格值得嗎？","整天全程包場且費用全含：飯店接送、專車與導遊、與作家本人的製作時光、資料館門票、午餐、釀造藏與晚餐。完成的作品當晚就能帶走。"],
+    ["時間","值得花上旅程中的一整天嗎？","海部市就在名古屋旁，不需長時間搭車。9:00到飯店接您，20:00左右送回，中間不需任何安排。"],
+    ["信心","我沒有藝術天分，作品能做得好嗎？","不需要任何經驗。{T}會一步步引導您，燒製與收尾也由作家本人完成。"],
+    ["體力","會很耗體力嗎？","一天大部分時間是在工作室坐著製作，各站只需短距離步行。作業精細，若您平時使用老花眼鏡，請記得攜帶。"]]},
+  steps:{h:"從申請到作品到手",items:[
+    ["送出申請","填寫約1分鐘，送出後立即收到確認信。"],
+    ["確認空檔","我們會與工作室、釀造藏及餐廳確認，並於3個工作天內回覆。"],
+    ["以PayPal付款","確認後寄送PayPal付款連結，請於3天內付款以保留日期。"],
+    ["行前通知","出發前一週，以電子郵件寄送接送細節與攜帶物品。"],
+    ["您在海部市的一天","當天透過WhatsApp聯繫，照片與影片也以WhatsApp傳送。"],
+    ["作品到手","完成的墜飾在一天結束前交給您，可直接帶回家。"]]},
+  know:{h:"參加前須知",items:[
+    "9:00在飯店大廳接您，20:00左右送回飯店。接送限名古屋市區（名古屋站、榮、伏見、金山周邊）的飯店，申請時請告知您的住宿地點。",
+    "每週一，以及黃金週（4月下旬至5月上旬）、盂蘭盆節（8月中旬）、白銀週（部分年份的9月下旬）及新年假期（12月下旬至1月上旬）不出團。其他日期也可能無法安排。",
+    "申請截止時間為您希望日期的20天前18:00（日本時間）。",
+    "每天僅限一組包場，最多4人。如有兒童參加，申請時請告知年齡。",
+    "製作時會使用細銀線與小工具。若您使用老花眼鏡，請記得攜帶。",
+    "日本料理經常使用大豆（味噌、醬油）。如有過敏或純素需求，請於申請時告知，我們將配合調整。恕無法提供清真餐。",
+    "視作品完成狀況，行程順序可能稍有調整。",
+    "辦公室於週末、日本國定假日、盂蘭盆節及新年假期休息，期間回覆可能需要較長時間。"],
+    cxH:"取消費用",cx:[["15天前（含）以前","免費"],["7至14天前","20%"],["2至6天前","50%"],["前一天","50%"],["當天","100%"]],cxNote:"以行程費用計算的比例。"},
+  bot:{"title":"關於行程的問題","hello":"您好！點選下方的問題，我會立即回答。","extra":[["費用是多少？","每人143,000日圓（含稅），1至4人包場。包含飯店接送、專屬導遊與專車、門票、午餐、晚餐及完成作品。"],["什麼時候可以參加？","每天一組，9:00至20:00。每週一，以及日本的連假期間：黃金週（4月下旬至5月上旬）、盂蘭盆節（8月中旬）、白銀週（部分年份的9月下旬）及新年假期（12月下旬至1月上旬）不出團。申請截止為希望日期的20天前。"]],"other":"我有其他問題","otherA":"請透過申請表單選擇「僅詢問」送出，我們會於3個工作天內以電子郵件回覆。","book":"前往申請表單","more":"還有其他問題嗎？","open":"開啟問答聊天","close":"關閉"},
+  faq:{h:"常見問題",items:[
+    ["沒有經驗也可以嗎？","可以。從銀線塑形到選色，{T}都會一步步引導，燒製與收尾由作家本人完成。"],
+    ["會製作什麼？","七寶墜飾。以銀線勾勒圖案，再填入您喜歡的釉料顏色。項鍊鏈子免費附贈。"],
+    ["作品當天就能帶走嗎？","可以。{T}在下午燒製並完成收尾，晚餐結束前交給您。由於燒製與研磨需要應有的時間，行程順序可能稍有調整。萬一當天未能完成，我們將以EMS寄送給您，運費由我們負擔。"],
+    ["可以購買作家本人的作品嗎？","可以。在工作室可欣賞{T}的作品，如有需要可自費購買，費用不含在行程中。"],
+    ["在哪裡接送？","9:00在您入住飯店的大廳接您，20:00左右送回同一間飯店。接送限名古屋市區（名古屋站、榮、伏見、金山周邊）的飯店，申請時請告知住宿地點。"],
+    ["導覽使用什麼語言？","導覽僅提供英語。英語導遊全天陪同，並翻譯作家的話。"],
+    ["可以配合飲食限制嗎？","午餐是田村家的家常料理，例如飯糰與豬肉味噌湯；晚餐是在當地日本料理店用餐。日本料理經常使用大豆（味噌、醬油）。如有過敏或純素需求，請於申請時告知，我們將配合調整。恕無法提供清真餐。"],
+    ["兒童可以參加嗎？","請於申請時告知年齡，我們會確認作業內容是否適合。費用以每人計算。"],
+    ["一個人也能參加嗎？","可以。1人即可成行，每人費用相同。"],
+    ["如何付款？","日期確認後，我們會寄送PayPal付款連結。請於3天內付款以保留日期。"],
+    ["取消費用如何計算？","15天前（含）以前：免費；7至14天前：行程費用的20%；2至6天前：50%；前一天：50%；當天：100%。"],
+    ["下雨怎麼辦？","一天大部分時間在室內，移動也搭乘專車，下雨幾乎沒有影響。"],
+    ["該穿什麼？","請穿著方便活動的衣服與好走的鞋子，在寺院及各站之間會步行一小段路。"],
+    ["可以拍照嗎？","當然可以。如工作室或釀造藏對拍攝有要求，請配合。我們也會透過WhatsApp傳送當天的照片與短片。"],
+    ["可以把味噌或溜醬油帶回國嗎？","釀造藏的商品當天可購買。各國對攜帶食品入境的規定不同，購買前請先確認。"],
+    ["我有其他問題。","請使用下方的申請表單並選擇「僅詢問」，我們會以電子郵件回覆。"]]},
+  book:{h:"申請您的日期",p:"每天僅限一組包場。請告訴我們您希望的日期，我們會於3個工作天內回覆。",micro:"日期確定前不會收取任何費用。",alt:"表單無法正常顯示？請在新分頁開啟。",btn:"開啟申請表單",after:"只想詢問問題？請使用同一份表單並選擇「僅詢問」。"},
+  foot:{saleH:"銷售單位",sale:"株式會社Act-U Travel（株式会社アクト・ユートラベル）<br>日本觀光廳長官登錄旅行業 第1102號<br>日本愛知縣名古屋市中區錦3-5-28 HP大津通大樓2F（〒460-0003）<br>+81 52-951-4451",opH:"企劃・執行",op:"Balt Kobo（バルト工房）<br>日本愛知縣瀨戶市仲切町3（〒489-0042）",privH:"個人資料處理",
+    priv:"您透過申請表單提供的資料（姓名、電子郵件、電話、住宿飯店、日期、人數、飲食需求等），僅用於回覆您的申請及執行行程。資料只會提供給銷售單位旅行社，以及當天相關的工作室、釀造藏、餐廳與交通安排單位，絕不出售。如需查詢或刪除，請以電子郵件與我們聯絡。",
+    ig:"Instagram"}
+}
+};
+
+/* ============================================================
+   描画
+   ============================================================ */
+const SUPPORTED = ["ja","en","fr","de","zh"];
+const HTML_LANG = { ja:"ja", en:"en", fr:"fr", de:"de", zh:"zh-Hant" };
+const $ = s => document.querySelector(s);
+let L = "en";
+const nm = k => L === "ja" ? NAMES[k].ja : L === "zh" ? NAMES[k].zh : NAMES[k].latin;
+const f = s => s.replaceAll("{T}", nm("T"));
+const brand = () => (L === "ja" || L === "zh") ? CONFIG.BRAND_JA : CONFIG.BRAND_LATIN;
+const ph = (file, tone, cls="") => `<div class="photo tone-${tone} ${cls}"><img src="images/${file}" alt="" onerror="this.remove()"><span>images/${file}</span></div>`;
+const formHref = () => CONFIG.FORM_URL || "#book";
+
+function render(){
+  const d = C[L];
+  document.documentElement.lang = HTML_LANG[L];
+  document.title = `${d.title} | ${brand()}`;
+  $("#brandName").textContent = brand();
+  $("#brandSub").textContent = CONFIG.BRAND_SUB;
+  $("#nav").innerHTML = d.nav.map(([h,t]) => `<a href="${h}">${t}</a>`).join("");
+  document.querySelectorAll("[data-t]").forEach(el => el.textContent = d[el.dataset.t]);
+
+  const h = d.hero, heroFiles = [["hero-tamura.jpg","enamel"],["hero-jimokuji.jpg","dawn"],["hero-brewery.jpg","warm"],["hero-pendant.jpg","enamel"]];
+  $("#hero").innerHTML = `<div class="wrap"><div>
+    <p class="kicker">${h.kicker}</p><h1>${h.h1}</h1><p class="lead">${f(h.lead)}</p>
+    <ul class="facts">${h.facts.map(x=>`<li>${x}</li>`).join("")}</ul>
+    <a class="btn" href="#book">${d.ctaMain}</a><p class="micro">${h.micro}</p>
+  </div><div class="hero-photos">${heroFiles.map(([file,tone],i)=>`<figure>${ph(file,tone)}<figcaption>${f(h.cap[i])}</figcaption></figure>`).join("")}</div></div>`;
+
+  $("#empathy").innerHTML = `<div class="wrap"><h2>${d.emp.h}</h2><div>${d.emp.p.map(x=>`<p>${x}</p>`).join("")}</div></div>`;
+
+  $("#story").innerHTML = `<div class="wrap"><h2>${d.story.h}</h2><div>${d.story.p.map(x=>`<p>${x}</p>`).join("")}</div>
+    <div class="land"><figure>${ph("jimokuji-wide.jpg","dawn")}<figcaption>${d.story.land}</figcaption></figure><figure>${ph("art-village-wide.jpg","enamel")}<figcaption>${d.story.works}</figcaption></figure></div>
+    <ol class="chain">${d.story.chain.map(x=>`<li>${x}</li>`).join("")}</ol></div>`;
+
+  const v = $("#video");
+  if (CONFIG.VIDEO_EMBED_URL){
+    v.hidden = false;
+    v.innerHTML = `<div class="wrap"><h2>${d.video}</h2><div class="video-box"><iframe src="${CONFIG.VIDEO_EMBED_URL}" title="${d.video}" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>`;
+  } else v.hidden = true;
+
+  const list = items => `<ul>${items.map(([t,s])=>`<li><b>${f(t)}</b><span>${f(s)}</span></li>`).join("")}</ul>`;
+  $("#expect").innerHTML = `<div class="wrap ew"><div><h2>${d.expect.h}</h2>${list(d.expect.items)}</div><div class="why"><h2>${d.why.h}</h2>${list(d.why.items)}</div></div>`;
+
+  $("#day").innerHTML = `<div class="wrap"><h2>${d.day.h}</h2><p class="intro">${d.day.intro}</p>
+    <div class="day-grid"><div class="sky" aria-hidden="true"><div class="ground"></div><div class="horizon"></div><div class="orb"></div><div class="clock">09:00</div><div class="now"></div></div>
+    <ol class="stops">${d.day.stops.map(([t,hh,p,img,tone])=>`<li class="stop" data-time="${t}"><time>${t}</time><div><h3>${f(hh)}</h3><p>${f(p)}</p>${img?ph(img,tone):""}</div></li>`).join("")}</ol></div></div>`;
+  initSky();
+
+  const tk = d.take, galFiles = ["g-pendant.jpg","g-wire.jpg","g-colors.jpg","g-works.jpg"], baFiles = [["ba-wire.jpg","enamel"],["ba-enamel.jpg","enamel"],["ba-finished.jpg","dusk"]];
+  $("#take").innerHTML = `<div class="wrap"><h2>${tk.h}</h2><p class="intro">${tk.intro}</p>
+    <h3 class="sub">${tk.gH}</h3><p class="subp">${f(tk.gP)}</p>
+    <ul class="gal">${tk.g.map((x,i)=>`<li>${ph(galFiles[i],"enamel")}<p>${x}</p></li>`).join("")}</ul>
+    <h3 class="sub">${tk.bH}</h3>
+    <ol class="ba">${tk.ba.map((x,i)=>`<li>${ph(...baFiles[i])}<p>${x}</p></li>`).join("")}</ol>
+    <div class="take-grid"><div>${tk.items.map(([a,b])=>`<div class="take-item"><h3>${f(a)}</h3><p>${f(b)}</p></div>`).join("")}<p class="note">${f(tk.note)}</p></div><div class="take-photos">${ph("finishing.jpg","enamel")}${ph("finished.jpg","dusk")}</div></div></div>`;
+
+  $("#artisans").innerHTML = `<div class="wrap"><h2>${d.people.h}</h2><p class="intro">${d.people.intro}</p><div class="people">
+    ${d.people.list.map(([k,role,yrs,bio,img])=>{const isP=!!NAMES[k];const m=isP&&MESSAGES[k]?MESSAGES[k][L]:"";return `<article class="person">${ph(img,isP?"enamel":"warm")}<h3>${isP?nm(k):k}</h3><p class="role">${role}</p><p class="years">${yrs}</p><p>${f(bio)}</p>${m?`<blockquote>${m}</blockquote>`:""}</article>`}).join("")}</div>
+    <figure class="team">${ph("workshop.jpg","enamel")}<figcaption>${f(d.people.team)}</figcaption></figure></div>`;
+
+  const p = d.price;
+  $("#price").innerHTML = `<div class="wrap"><h2>${p.h}</h2><div class="price-grid"><div class="price-card">
+    <div class="amount">${p.amount}</div><div class="per">${p.per}</div>
+    <dl>${p.rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
+    <a class="btn" href="#book">${d.ctaMain}</a><p class="micro">${d.hero.micro}</p></div>
+    <div class="inc"><h3>${p.incH}</h3><ul>${p.inc.map(x=>`<li>${f(x)}</li>`).join("")}</ul><h3>${p.excH}</h3><ul>${p.exc.map(x=>`<li>${f(x)}</li>`).join("")}</ul></div></div></div>`;
+
+  $("#worries").innerHTML = `<div class="wrap"><h2>${d.worries.h}</h2><div class="worries">${d.worries.items.map(([tag,q,a])=>`<div class="worry"><small>${tag}</small><h3>${q}</h3><p>${f(a)}</p></div>`).join("")}</div></div>`;
+
+  $("#steps").innerHTML = `<div class="wrap"><h2>${d.steps.h}</h2><ol class="steps">${d.steps.items.map(([a,b])=>`<li><h3>${a}</h3><p>${b}</p></li>`).join("")}</ol></div>`;
+
+  const k = d.know;
+  $("#know").innerHTML = `<div class="wrap know-grid"><div><h2>${k.h}</h2><ul>${k.items.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+    <div class="cancel"><h3>${k.cxH}</h3><ul>${k.cx.map(([a,b])=>`<li><span>${a}</span><b>${b}</b></li>`).join("")}</ul><p>${k.cxNote}</p></div></div>`;
+
+  $("#faq").innerHTML = `<div class="wrap"><h2>${d.faq.h}</h2>${d.faq.items.map(([q,a])=>`<details><summary>${q}</summary><p>${f(a)}</p></details>`).join("")}</div>`;
+
+  const b = d.book;
+  const formPart = CONFIG.FORM_EMBED_URL
+    ? `<div class="form-frame"><iframe src="${CONFIG.FORM_EMBED_URL}" title="${b.h}" loading="lazy"></iframe></div>`
+    : `<div class="form-fallback"><a class="btn" href="${formHref()}" ${CONFIG.FORM_URL?'target="_blank" rel="noopener"':''}>${b.btn}</a></div>`;
+  $("#book").innerHTML = `<div class="wrap"><div class="head"><h2>${b.h}</h2><p>${b.p}</p><p class="micro">${b.micro}</p></div>${formPart}${CONFIG.FORM_EMBED_URL&&CONFIG.FORM_URL?`<p class="alt"><a href="${CONFIG.FORM_URL}" target="_blank" rel="noopener">${b.alt}</a></p>`:""}<p class="after">${b.after}</p></div>`;
+
+  const ft = d.foot;
+  $("#footer").innerHTML = `<div class="wrap"><div class="foot-grid">
+    <div><h3>${ft.opH}</h3><p>${ft.op}</p><p><a href="mailto:${CONFIG.EMAIL}">${CONFIG.EMAIL}</a><br><a href="tel:${CONFIG.TEL_LINK}">${L==="ja"?CONFIG.TEL_JP:CONFIG.TEL_INTL}</a></p><h3 class="sale-h">${ft.saleH}</h3><p>${ft.sale}</p></div>
+    <div><details><summary>${ft.privH}</summary><p>${ft.priv}</p></details>
+      <div class="links">${CONFIG.SHOW_INSTAGRAM&&CONFIG.INSTAGRAM_URL?`<a href="${CONFIG.INSTAGRAM_URL}" target="_blank" rel="noopener">${ft.ig}</a>`:""}</div></div>
+    </div><p class="copy">© ${brand()}</p></div>`;
+
+  document.querySelectorAll(".langs button").forEach(x => x.setAttribute("aria-pressed", x.dataset.lang === L ? "true" : "false"));
+  try{ localStorage.setItem("ama_lang", L); }catch(e){}
+  if (CONFIG.FORM_URL && !CONFIG.FORM_EMBED_URL) document.querySelectorAll('a.btn[href="#book"]').forEach(a => { a.href = CONFIG.FORM_URL; a.target = "_blank"; a.rel = "noopener"; });
+  watchMbar();
+  if (typeof BOT !== 'undefined') BOT.reset();
+}
+
+/* 空と時計（時刻：[空の色, 文字色, 太陽の横位置%, 高さ%, 太陽の色, 光] ） */
+const SKY = {
+  "09:00":["#DCE6EE","#1C1A2B",10,34,"#F7EDCF","rgba(247,237,207,.6)"],
+  "09:30":["#E0E8EE","#1C1A2B",16,42,"#F6EBC8","rgba(246,235,200,.6)"],
+  "10:00":["#E4EAEA","#1C1A2B",24,52,"#F5E6B8","rgba(245,230,184,.6)"],
+  "11:00":["#E9EADF","#1C1A2B",34,60,"#F7E3A4","rgba(247,227,164,.65)"],
+  "12:00":["#EEE6CC","#1C1A2B",48,66,"#F4D98E","rgba(244,217,142,.65)"],
+  "16:00":["#E4C49C","#1C1A2B",72,44,"#ECB15E","rgba(236,177,94,.65)"],
+  "17:30":["#9C4A60","#F6EEF1",84,26,"#E9864B","rgba(233,134,75,.7)"],
+  "20:00":["#1E2246","#E9ECF5",24,62,"#E8E6DA","rgba(232,230,218,.35)"]
+};
+let skyIO;
+function initSky(){
+  const sky = $(".sky"), clock = sky.querySelector(".clock"), now = sky.querySelector(".now");
+  const set = stop => {
+    const t = stop.dataset.time, s = SKY[t] || SKY["12:00"];
+    document.querySelectorAll(".stop").forEach(x => x.classList.toggle("is-active", x === stop));
+    clock.textContent = t; now.textContent = stop.querySelector("h3").textContent;
+    [["--sky",s[0]],["--sky-ink",s[1]],["--ox",s[2]+"%"],["--oy",s[3]+"%"],["--orb",s[4]],["--orb-glow",s[5]]].forEach(([k,v])=>sky.style.setProperty(k,v));
+  };
+  if (skyIO) skyIO.disconnect();
+  skyIO = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && set(e.target)), {rootMargin:"-45% 0px -50% 0px"});
+  const stops = document.querySelectorAll(".stop");
+  stops.forEach(s => skyIO.observe(s));
+  set(stops[0]);
+}
+
+/* スマホ下部の予約ボタン */
+let mIO;
+function watchMbar(){
+  const bar = $(".mbar"), vis = new Set();
+  if (mIO) mIO.disconnect();
+  mIO = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? vis.add(e.target) : vis.delete(e.target)); bar.classList.toggle("hide", vis.size > 0); });
+  mIO.observe($("#hero")); mIO.observe($("#book"));
+}
+
+
+/* ============================================================
+   よくある質問チャットボット（FAQの内容から自動で作成）
+   ============================================================ */
+const BOT = (() => {
+  const box = $("#bot"), log = box.querySelector(".bot-log"), chips = box.querySelector(".bot-chips"), btn = $(".bot-btn");
+  const qa = () => { const d = C[L]; return d.bot.extra.concat(d.faq.items.slice(0, -1)); };
+  const say = (t, who) => { const m = document.createElement("div"); m.className = "msg " + who; m.innerHTML = t; log.appendChild(m); log.scrollTop = log.scrollHeight; return m; };
+  const drawChips = () => {
+    const d = C[L].bot;
+    chips.innerHTML = "";
+    qa().forEach(([q, a]) => { const b = document.createElement("button"); b.type = "button"; b.textContent = q; b.onclick = () => { const u = say(q, "u"); say(f(a), "b"); log.scrollTop = u.offsetTop - 12; }; chips.appendChild(b); });
+    const o = document.createElement("button"); o.type = "button"; o.className = "alt"; o.textContent = d.other;
+    o.onclick = () => { const u = say(d.other, "u"); const m = say(d.otherA, "b"); const a = document.createElement("a"); a.className = "btn"; a.href = formHref(); if (CONFIG.FORM_URL && !CONFIG.FORM_EMBED_URL) { a.target = "_blank"; a.rel = "noopener"; } a.textContent = d.book; a.onclick = () => close(); m.appendChild(document.createElement("br")); m.appendChild(a); log.scrollTop = u.offsetTop - 12; };
+    chips.appendChild(o);
+  };
+  const reset = () => {
+    const d = C[L].bot;
+    box.querySelector(".bot-title").textContent = d.title;
+    box.setAttribute("aria-label", d.title);
+    box.querySelector(".bot-x").setAttribute("aria-label", d.close);
+    btn.setAttribute("aria-label", d.open);
+    log.innerHTML = ""; say(d.hello, "b"); drawChips();
+  };
+  const open = () => { box.hidden = false; btn.setAttribute("aria-expanded", "true"); };
+  const close = () => { box.hidden = true; btn.setAttribute("aria-expanded", "false"); btn.focus(); };
+  btn.onclick = () => box.hidden ? open() : close();
+  box.querySelector(".bot-x").onclick = close;
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !box.hidden) close(); });
+  return { reset };
+})();
+document.querySelectorAll(".langs button").forEach(x => x.addEventListener("click", () => { L = x.dataset.lang; render(); }));
+(function(){
+  const q = new URLSearchParams(location.search).get("lang");
+  let s = null; try{ s = localStorage.getItem("ama_lang"); }catch(e){}
+  const nav = (navigator.language || "en").slice(0,2).toLowerCase();
+  L = [q, s, nav].find(x => SUPPORTED.includes(x)) || "en";
+  render();
+  BOT.reset();
+})();
+</script>
+</body>
+</html>
